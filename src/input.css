@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.button {
+  @apply bg-midnight hover:bg-midnight/80 border text-white font-semibold p-3 px-5 text-sm rounded-lg transition-all duration-300 transform hover:scale-105 flex items-center space-x-2 shadow-lg;
+}
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+.accordion-content.open {
+  max-height: 200px;
+  transition: max-height 0.3s ease-in;
+}
