@@ -70,6 +70,79 @@ function toggleDropdown(dropdownName) {
   }
 }
 
+// Navbar scroll functionality
+function updateNavbar() {
+  const navbar = document.getElementById("navbar");
+  const scrollY = window.scrollY;
+  const viewportHeight = window.innerHeight;
+
+  // Elements to update
+  const navbarTexts = document.querySelectorAll(".navbar-text");
+  const navbarLinks = document.querySelectorAll(".navbar-link");
+  const navbarLinkActives = document.querySelectorAll(".navbar-link-active");
+  const bookBtn = document.getElementById("book-btn");
+
+  if (scrollY > viewportHeight) {
+    // Scrolled past 100vh - solid navbar
+    navbar.classList.remove("bg-transparent");
+    navbar.classList.add("bg-white");
+
+    // Update text colors to dark
+    navbarTexts.forEach((el) => {
+      el.classList.remove("text-white");
+      el.classList.add("text-dark");
+    });
+
+    navbarLinks.forEach((el) => {
+      el.classList.remove("text-white");
+      el.classList.add("text-dark");
+    });
+
+    navbarLinkActives.forEach((el) => {
+      el.classList.remove("text-white");
+      el.classList.add("text-dark");
+    });
+
+    if (bookBtn) {
+      bookBtn.classList.remove("text-white");
+      bookBtn.classList.add("text-dark");
+    }
+  } else {
+    // At top - transparent navbar
+    navbar.classList.remove("bg-white");
+    navbar.classList.add("bg-transparent");
+
+    // Update text colors to white
+    navbarTexts.forEach((el) => {
+      el.classList.remove("text-dark");
+      el.classList.add("text-white");
+    });
+
+    navbarLinks.forEach((el) => {
+      el.classList.remove("text-dark");
+      el.classList.add("text-white");
+    });
+
+    navbarLinkActives.forEach((el) => {
+      el.classList.remove("text-dark");
+      el.classList.add("text-white");
+    });
+
+    if (bookBtn) {
+      bookBtn.classList.remove("text-dark");
+      bookBtn.classList.add("text-white");
+    }
+  }
+}
+
+// Initialize navbar state
+document.addEventListener("DOMContentLoaded", function () {
+  updateNavbar();
+});
+
+// Listen for scroll events
+window.addEventListener("scroll", updateNavbar);
+
 // Mobile menu functionality
 function toggleMobileMenu() {
   const mobileMenu = document.getElementById("mobile-menu");
