@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Manrope:wght@300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Manrope:wght@300;400;500;600;700;800&family=Noto+Color+Emoji&display=swap");
 
 *, ::before, ::after{
   --tw-border-spacing-x: 0;
@@ -683,6 +683,10 @@ video {
   z-index: 999;
 }
 
+.-z-10{
+  z-index: -10;
+}
+
 .order-1{
   order: 1;
 }
@@ -698,6 +702,11 @@ video {
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
+}
+
+.my-5{
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
 }
 
 .-ml-2{
@@ -764,6 +773,18 @@ video {
   margin-top: 1.5rem;
 }
 
+.mb-12{
+  margin-bottom: 3rem;
+}
+
+.mb-10{
+  margin-bottom: 2.5rem;
+}
+
+.mt-20{
+  margin-top: 5rem;
+}
+
 .block{
   display: block;
 }
@@ -794,6 +815,34 @@ video {
 
 .aspect-video{
   aspect-ratio: 16 / 9;
+}
+
+.aspect-\[3\/4\]{
+  aspect-ratio: 3/4;
+}
+
+.\!aspect-\[2\/2\.5\]{
+  aspect-ratio: 2/2.5 !important;
+}
+
+.\!aspect-\[3\/2\]{
+  aspect-ratio: 3/2 !important;
+}
+
+.\!aspect-\[3\/4\]{
+  aspect-ratio: 3/4 !important;
+}
+
+.\!aspect-\[3\/3\.5\]{
+  aspect-ratio: 3/3.5 !important;
+}
+
+.\!aspect-\[3\/3\]{
+  aspect-ratio: 3/3 !important;
+}
+
+.aspect-auto{
+  aspect-ratio: auto;
 }
 
 .size-10{
@@ -940,16 +989,16 @@ video {
   width: 5rem;
 }
 
+.w-28{
+  width: 7rem;
+}
+
 .w-32{
   width: 8rem;
 }
 
 .w-4{
   width: 1rem;
-}
-
-.w-40{
-  width: 10rem;
 }
 
 .w-48{
@@ -995,10 +1044,6 @@ video {
 
 .w-full{
   width: 100%;
-}
-
-.w-28{
-  width: 7rem;
 }
 
 .min-w-12{
@@ -1334,6 +1379,10 @@ video {
   border-color: rgb(255 255 255 / 0.4);
 }
 
+.border-white\/10{
+  border-color: rgb(255 255 255 / 0.1);
+}
+
 .bg-\[\#FCFCFC\]{
   --tw-bg-opacity: 1;
   background-color: rgb(252 252 252 / var(--tw-bg-opacity, 1));
@@ -1380,6 +1429,10 @@ video {
 
 .bg-gold\/20{
   background-color: rgb(174 167 151 / 0.2);
+}
+
+.bg-gold\/50{
+  background-color: rgb(174 167 151 / 0.5);
 }
 
 .bg-gray-100{
@@ -1448,8 +1501,12 @@ video {
   background-color: rgb(255 255 255 / 0.2);
 }
 
-.bg-gold\/50{
-  background-color: rgb(174 167 151 / 0.5);
+.bg-white\/5{
+  background-color: rgb(255 255 255 / 0.05);
+}
+
+.bg-white\/40{
+  background-color: rgb(255 255 255 / 0.4);
 }
 
 .bg-gradient-to-r{
@@ -1574,6 +1631,10 @@ video {
 
 .pt-6{
   padding-top: 1.5rem;
+}
+
+.pb-0{
+  padding-bottom: 0px;
 }
 
 .text-left{
@@ -1845,9 +1906,9 @@ video {
 }
 
 body{
-  font-family: Manrope, sans-serif;
   --tw-text-opacity: 1;
   color: rgb(42 41 39 / var(--tw-text-opacity, 1));
+  font-family: "Manrope", "Noto Color Emoji", sans-serif;
 }
 
 .button{
@@ -1954,12 +2015,76 @@ body{
 }
 
 .article-container p {
-  color: red;
-  font-size: 92pt;
+  margin-bottom: 24px;
+}
+
+.article-container h1,
+.article-container h2,
+.article-container h3 {
+  font-weight: 600;
+  color: #2a2927;
+  line-height: 1;
+}
+
+.article-container h1 {
+  margin-bottom: 16px;
+  margin-top: 28px;
+  font-size: 2.25rem;
+}
+
+.article-container h2 {
+  margin-bottom: 16px;
+  margin-top: 28px;
+  font-size: 2rem;
+}
+
+.article-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 24px;
+}
+
+.\*\:mx-5 > *{
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
+}
+
+.\*\:mx-2 > *{
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
 
 .\*\:aspect-\[372\/386\] > *{
   aspect-ratio: 372/386;
+}
+
+.\*\:aspect-\[4\/5\] > *{
+  aspect-ratio: 4/5;
+}
+
+.\*\:aspect-\[2\/3\] > *{
+  aspect-ratio: 2/3;
+}
+
+.\*\:aspect-\[3\/2\] > *{
+  aspect-ratio: 3/2;
+}
+
+.\*\:aspect-\[3\/2\.5\] > *{
+  aspect-ratio: 3/2.5;
+}
+
+.\*\:size-8 > *{
+  width: 2rem;
+  height: 2rem;
+}
+
+.\*\:size-5 > *{
+  width: 1.25rem;
+  height: 1.25rem;
 }
 
 .\*\:h-\[504px\] > *{
@@ -2004,17 +2129,16 @@ body{
   border-radius: 0.75rem;
 }
 
+.\*\:rounded-full > *{
+  border-radius: 9999px;
+}
+
 .\*\:border > *{
   border-width: 1px;
 }
 
 .\*\:border-dashed > *{
   border-style: dashed;
-}
-
-.\*\:border-red-800 > *{
-  --tw-border-opacity: 1;
-  border-color: rgb(153 27 27 / var(--tw-border-opacity, 1));
 }
 
 .\*\:border-white > *{
@@ -2034,6 +2158,10 @@ body{
 .\*\:bg-white > *{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+}
+
+.\*\:bg-dark\/10 > *{
+  background-color: rgb(42 41 39 / 0.1);
 }
 
 .\*\:p-4 > *{
@@ -2062,6 +2190,12 @@ body{
 .\*\:shadow-lg > *{
   --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.\*\:shadow-xl > *{
+  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
@@ -2234,16 +2368,49 @@ body{
     grid-column: span 9 / span 9;
   }
 
+  .lg\:my-0{
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
   .lg\:-mt-20{
     margin-top: -5rem;
+  }
+
+  .lg\:mb-16{
+    margin-bottom: 4rem;
+  }
+
+  .lg\:mt-16{
+    margin-top: 4rem;
   }
 
   .lg\:block{
     display: block;
   }
 
+  .lg\:hidden{
+    display: none;
+  }
+
   .lg\:aspect-auto{
     aspect-ratio: auto;
+  }
+
+  .lg\:aspect-\[2\/4\]{
+    aspect-ratio: 2/4;
+  }
+
+  .lg\:aspect-\[2\/3\]{
+    aspect-ratio: 2/3;
+  }
+
+  .lg\:aspect-\[2\/2\.5\]{
+    aspect-ratio: 2/2.5;
+  }
+
+  .lg\:\!aspect-\[3\/3\]{
+    aspect-ratio: 3/3 !important;
   }
 
   .lg\:h-\[164px\]{
@@ -2348,6 +2515,14 @@ body{
     padding-top: 80px;
   }
 
+  .lg\:pb-0{
+    padding-bottom: 0px;
+  }
+
+  .lg\:text-left{
+    text-align: left;
+  }
+
   .lg\:text-2xl{
     font-size: 1.5rem;
     line-height: 2rem;
@@ -2366,6 +2541,11 @@ body{
   .lg\:text-9xl{
     font-size: 8rem;
     line-height: 1;
+  }
+
+  .lg\:text-4xl{
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 
   .lg\:\*\:w-1\/3 > *{
