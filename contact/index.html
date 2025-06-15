@@ -9,6 +9,15 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/css/intlTelInput.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/css/intlTelInput.css"
+    />
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
   </head>
   <body class="font-manrope">
@@ -446,345 +455,103 @@
       </div>
     </nav>
 
-    <main>
-      <section class="bg-cream/20">
-        <div
-          class="max-w-screen-2xl py-16 lg:pt-[100px] pb-12 px-4 lg:px-8 mx-auto"
-        >
+    <main class="bg-cream/20">
+      <section class="">
+        <div class="container py-16 lg:py-[100px] px-4 lg:px-8 mx-auto">
           <!-- Header -->
           <div class="text-center mb-16 space-y-5">
             <span
               class="block w-fit mx-auto text-sm lg:text-base bg-gold/20 text-dark/60 px-4 p-2 rounded-full font-medium"
-              >Educational Stories
-            </span>
+              >Your questions deserve real answers</span
+            >
             <h2
               class="text-5xl lg:text-7xl leading-tight tracking-tighter font-semibold text-gray-900 mb-4"
             >
-              The truth about Hair transplant
+              Contact us
             </h2>
+            <p class="mx-auto text-dark/50 font-medium max-w-xl">
+              Whether you're ready to begin your journey or just have questions,
+              we're here to help — find our clinic, reach out on social, or drop
+              us a message anytime.
+            </p>
           </div>
-          <!-- Article Photo -->
-          <div
-            class="min-h-[500px] bg-dark/10 rounded-2xl overflow-hidden"
-          ></div>
-        </div>
-      </section>
-      <!-- Page breadcrumbs -->
-      <section class="max-w-screen-2xl mx-auto p-4 lg:p-6">
-        <div
-          class="flex flex-wrap gap-y-3 gap-x-3 items-center text-dark font-semibold"
-        >
-          <a href="/">
-            <i class="fa-solid fa-home"></i>
-          </a>
-          <i class="fa-solid fa-chevron-right text-gray-300"></i>
-          <a href="/blog"> Blog </a>
-          <i class="fa-solid fa-chevron-right text-gray-300"></i>
-          <p>Educational stories</p>
-          <i class="fa-solid fa-chevron-right text-gray-300"></i>
-          <p class="text-dark/50">The truth about hair transplants</p>
-        </div>
-      </section>
-      <section class="max-w-screen-2xl mx-auto p-4 lg:p-6">
-        <div class="grid lg:grid-cols-12 gap-10">
-          <div class="lg:col-span-3">
-            <div class="grid divide-y *:border-dashed *:py-4">
-              <section class="space-y-2">
-                <span class="block text-sm text-dark/50">Contributor:</span>
-                <div class="flex items-start gap-4">
-                  <div
-                    class="rounded-full bg-cream/50 overflow-clip size-12 min-w-12"
-                  >
-                    <img src="" alt="" />
-                    <!--author image-->
-                  </div>
-                  <!-- author name and article date -->
-                  <div class="space-y-2">
-                    <div class="text-dark font-semibold text-lg">
-                      Dianne Russell
-                    </div>
-                    <div class="text-sm text-dark/50">Oct 02, 2024</div>
-                  </div>
-                </div>
-              </section>
-              <section class="space-y-2">
-                <span class="block text-sm text-dark/50">Reading time:</span>
-                <div class="flex items-center gap-2">
-                  <i class="fa fa-clock"></i>
-
-                  <!-- reading time -->
-                  <div class="">
-                    <div class="text-sm text-dark font-semibold">8 mins</div>
-                  </div>
-                </div>
-              </section>
-              <section class="space-y-2">
-                <span class="block text-sm text-dark/50">Blog title:</span>
-
-                <div class="text-dark font-semibold">
-                  The truth about hair transplants
-                </div>
-              </section>
-              <!-- This section has a duplicate down the page. This copy is hidden in mobiie view -->
-              <section class="hidden lg:block">
-                <h4 class="font-semibold">Similar Articles</h4>
-                <div class="grid divide-y *:py-5 *:border-dashed mb-8">
-                  <div class="flex w-full items-start gap-3">
-                    <div
-                      class="size-20 min-w-20 bg-cream/50 rounded-md overflow-clip"
-                    >
-                      <!-- article image -->
-                      <img src="" alt="" class="size-full object-cover" />
-                    </div>
-                    <div>
-                      <p class="font-semibold">
-                        Nobody ever expects to see a smile until they do
-                      </p>
-                      <div class="text-gray-500">
-                        <p class="capitalize">john doe</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="flex w-full items-start gap-3">
-                    <div
-                      class="size-20 min-w-20 bg-cream/50 rounded-md overflow-clip"
-                    >
-                      <!-- article image -->
-                      <img src="" alt="" class="size-full object-cover" />
-                    </div>
-                    <div>
-                      <p class="font-semibold">
-                        The truth about hair transpants, what to expect
-                      </p>
-                      <div class="text-gray-500">
-                        <p class="capitalize">john doe</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <h4 class="font-semibold">More options</h4>
-                <div
-                  class="grid divide-y *:p-5 hover:*:bg-gray-100 *:rounded-md *:border-dashed mb-8"
+          <!-- contact form -->
+          <form action=""></form>
+          <div class="grid lg:grid-cols-2 gap-6">
+            <input
+              type="text"
+              name="name"
+              placeholder="Your name"
+              class="bg-white border border-dark/20 rounded p-4"
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="Email Address"
+              class="bg-white border border-dark/20 rounded p-4"
+            />
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              class="bg-white w-full border border-dark/20 rounded p-4"
+            />
+            <div class="relative">
+              <select
+                name="Interested_in"
+                class="w-full appearance-none bg-white border border-dark/20 rounded p-4"
+              >
+                <option value="" class="hidden">Interested in</option>
+                <option value="option 1">option 1</option>
+                <option value="option 2">option 2</option>
+                <option value="option 3">option 3</option>
+              </select>
+              <i
+                class="absolute right-3 top-1/2 -translate-y-1/2 fa-solid fa-chevron-down"
+              ></i>
+            </div>
+            <div class="relative col-span-full">
+              <select
+                name="sub_service"
+                class="w-full appearance-none bg-white border border-dark/20 rounded p-4"
+              >
+                <option value="" class="hidden">Sub service</option>
+                <option value="option 1">option 1</option>
+                <option value="option 2">option 2</option>
+                <option value="option 3">option 3</option>
+              </select>
+              <i
+                class="absolute right-3 top-1/2 -translate-y-1/2 fa-solid fa-chevron-down"
+              ></i>
+            </div>
+            <div class="col-span-full">
+              <div
+                id="dropzone"
+                class="h-64 border-2 border-dashed border-dark/20 bg-white rounded-xl flex flex-col items-center justify-center gap-2 text-gray-500 transition-colors duration-200 relative cursor-pointer"
+              >
+                <button
+                  type="button"
+                  class="border flex items-center gap-2 px-4 py-2 rounded-lg z-10"
                 >
-                  <div class="flex w-full items-start gap-3">
-                    <div
-                      class="flex items-center justify-center size-12 min-w-12 bg-white border border-gray-100 rounded-md overflow-clip"
-                    >
-                      <i class="fa fa-arrow-left"></i>
-                    </div>
-                    <div>
-                      <p class="font-semibold">
-                        Nobody ever expects to see a smile until they do
-                      </p>
-                      <div class="text-gray-500">
-                        <p class="capitalize">john doe</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="flex w-full items-start gap-3">
-                    <div
-                      class="flex items-center justify-center size-12 min-w-12 bg-white border border-gray-100 rounded-md overflow-clip"
-                    >
-                      <i class="fa fa-arrow-right"></i>
-                    </div>
-                    <div>
-                      <p class="font-semibold">
-                        The truth about hair transpants, what to expect
-                      </p>
-                      <div class="text-gray-500">
-                        <p class="capitalize">john doe</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </section>
-            </div>
-          </div>
-          <div class="lg:col-span-9">
-            <!-- Styles for paragraphs, headers and other elements have been but in the input.css (and output.css). DO NOT REMOVE THE classname "article-container" to keep these styles -->
-            <div class="max-w-3xl font-medium article-container text-dark/80">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Mollitia, ipsam consectetur dolorem nihil aut quasi facere
-                veritatis ut laboriosam ab, voluptate quisquam cumque? Tenetur
-                consectetur sit reprehenderit nihil. Impedit, sint.
-              </p>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Mollitia, ipsam consectetur dolorem nihil aut quasi facere
-                veritatis ut laboriosam ab, voluptate quisquam cumque? Tenetur
-                consectetur sit reprehenderit nihil. Impedit, sint. Lorem ipsum
-                dolor sit amet consectetur adipisicing elit. Doloremque quos
-                velit in placeat consectetur quibusdam nemo, officia reiciendis
-                omnis, fugiat deserunt possimus odit sed. Optio temporibus et
-                earum ex accusamus.
-              </p>
-              <h1>The misconceptions about hair</h1>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Mollitia, ipsam consectetur dolorem nihil aut quasi facere
-                veritatis ut laboriosam ab, voluptate quisquam cumque? Tenetur
-                consectetur sit reprehenderit nihil. Impedit, sint.
-              </p>
-              <h2>1. Start with Hydration</h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Perferendis facere excepturi quas magnam dolor commodi
-                reiciendis vero atque ratione, iusto vel hic maxime aliquam
-                ipsam a. Non hic quia soluta!
-              </p>
-              <p>
-                Quick Tip: Lorem ipsum dolor sit amet consectetur adipisicing
-                elit.
-              </p>
-              <img src="/src/images/hero-image.jpg" alt="" />
-              <h2>2. Start with Hydration</h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Perferendis facere excepturi quas magnam dolor commodi
-                reiciendis vero atque ratione, iusto vel hic maxime aliquam
-                ipsam a. Non hic quia soluta!
-              </p>
-              <p>
-                ✅ Write down 3 things you are grateful for
-                <br />
-                ✅List your top priorities for the day
-                <br />
-                ✅Set a positive affirmation to stay motivated
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- This section has a duplicate above the page. This copy is hidden in desktop view -->
-      <section class="lg:hidden block p-4">
-        <h4 class="font-bold text-lg">Similar Articles</h4>
-        <div class="grid divide-y *:py-5 *:border-dashed mb-8">
-          <div class="flex w-full items-start gap-3">
-            <div class="size-20 min-w-20 bg-cream/50 rounded-md overflow-clip">
-              <!-- article image -->
-              <img src="" alt="" class="size-full object-cover" />
-            </div>
-            <div>
-              <p class="font-semibold">
-                Nobody ever expects to see a smile until they do
-              </p>
-              <div class="text-gray-500">
-                <p class="capitalize">john doe</p>
+                  <div class="fa fa-upload"></div>
+                  Upload
+                </button>
+                <span class="block text-lg font-semibold"
+                  >Choose an image or drag & drop it here</span
+                >
+                <span class="block text-sm">JPG, JPEG, and WEBP. Max 20mb</span>
+                <p
+                  id="filename"
+                  class="absolute top-4 text-sm text-gray-700"
+                ></p>
+                <input
+                  type="file"
+                  id="fileInput"
+                  accept="image/*"
+                  class="absolute inset-0 opacity-0 cursor-pointer"
+                />
               </div>
             </div>
-          </div>
-          <div class="flex w-full items-start gap-3">
-            <div class="size-20 min-w-20 bg-cream/50 rounded-md overflow-clip">
-              <!-- article image -->
-              <img src="" alt="" class="size-full object-cover" />
-            </div>
-            <div>
-              <p class="font-semibold">
-                The truth about hair transpants, what to expect
-              </p>
-              <div class="text-gray-500">
-                <p class="capitalize">john doe</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <h4 class="font-bold text-lg">More options</h4>
-        <div
-          class="grid divide-y *:p-5 hover:*:bg-gray-100 *:rounded-md *:border-dashed mb-8"
-        >
-          <div class="flex w-full items-start gap-3">
-            <div
-              class="flex items-center justify-center size-12 min-w-12 bg-white border border-gray-100 rounded-md overflow-clip"
-            >
-              <i class="fa fa-arrow-left"></i>
-            </div>
-            <div>
-              <p class="font-semibold">
-                Nobody ever expects to see a smile until they do
-              </p>
-              <div class="text-gray-500">
-                <p class="capitalize">john doe</p>
-              </div>
-            </div>
-          </div>
-          <div class="flex w-full items-start gap-3">
-            <div
-              class="flex items-center justify-center size-12 min-w-12 bg-white border border-gray-100 rounded-md overflow-clip"
-            >
-              <i class="fa fa-arrow-right"></i>
-            </div>
-            <div>
-              <p class="font-semibold">
-                The truth about hair transpants, what to expect
-              </p>
-              <div class="text-gray-500">
-                <p class="capitalize">john doe</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="">
-        <div class="max-w-screen-2xl py-16 lg:py-[100px] px-4 lg:px-8 mx-auto">
-          <!-- Header -->
-          <div class="mb-10 lg:mb-16 text-center lg:text-left">
-            <h2 class="text-2xl lg:text-4xl font-semibold text-gray-900 mb-4">
-              Top Trending reads
-            </h2>
-          </div>
-          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
-            <a href="/blog/article/?id=1342423144523" class="grid gap-y-3">
-              <div class="aspect-[4/3.5] bg-gray-300 rounded-md overflow-clip">
-                <!-- article image -->
-                <img src="" alt="" class="size-full object-cover" />
-              </div>
-              <span class="text-sm text-gray-500">1 JUN 2025</span>
-              <p class="font-semibold">
-                The truth about hair transpants, what to expect
-              </p>
-              <div class="flex items-center gap-3 text-gray-500">
-                <div class="size-10 bg-gray-200 rounded-full overflow-clip">
-                  <!-- article author image -->
-                  <img src="" alt="" class="size-full object-cover" />
-                </div>
-                <p class="capitalize">john doe</p>
-              </div>
-            </a>
-            <a href="/blog/article/?id=1342423144523" class="grid gap-y-3">
-              <div class="aspect-[4/3.5] bg-gray-300 rounded-md overflow-clip">
-                <!-- article image -->
-                <img src="" alt="" class="size-full object-cover" />
-              </div>
-              <span class="text-sm text-gray-500">1 JUN 2025</span>
-              <p class="font-semibold">
-                The truth about hair transpants, what to expect
-              </p>
-              <div class="flex items-center gap-3 text-gray-500">
-                <div class="size-10 bg-gray-200 rounded-full overflow-clip">
-                  <!-- article author image -->
-                  <img src="" alt="" class="size-full object-cover" />
-                </div>
-                <p class="capitalize">john doe</p>
-              </div>
-            </a>
-            <a href="/blog/article/?id=1342423144523" class="grid gap-y-3">
-              <div class="aspect-[4/3.5] bg-gray-300 rounded-md overflow-clip">
-                <!-- article image -->
-                <img src="" alt="" class="size-full object-cover" />
-              </div>
-              <span class="text-sm text-gray-500">1 JUN 2025</span>
-              <p class="font-semibold text-lg">
-                The truth about hair transpants, what to expect
-              </p>
-              <div class="flex items-center gap-3 text-gray-500">
-                <div class="size-10 bg-gray-200 rounded-full overflow-clip">
-                  <!-- article author image -->
-                  <img src="" alt="" class="size-full object-cover" />
-                </div>
-                <p class="capitalize">john doe</p>
-              </div>
-            </a>
           </div>
         </div>
       </section>
@@ -994,100 +761,65 @@
         </div>
       </div>
     </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/intlTelInput.min.js"></script>
     <script>
-      class TabComponent {
-        constructor() {
-          this.tabButtons = document.querySelectorAll(".tab-button");
-          this.tabPanels = document.querySelectorAll(".tab-panel");
-          this.tabIndicator = document.getElementById("tabIndicator");
-          this.activeTab = 0;
+      const input = document.querySelector("#phone");
+      window.intlTelInput(input, {
+        initialCountry: "auto",
+        geoIpLookup: function (callback) {
+          fetch("https://ipinfo.io/json?token=f510d1131e7757")
+            .then((resp) => resp.json())
+            .then((resp) => callback(resp.country))
+            .catch(() => callback("us"));
+        },
+        utilsScript:
+          "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/utils.js",
+      });
+    </script>
+    <script>
+      const dropzone = document.getElementById("dropzone");
+      const fileInput = document.getElementById("fileInput");
+      const filenameDisplay = document.getElementById("filename");
 
-          this.init();
+      // Drag over effect
+      dropzone.addEventListener("dragover", (e) => {
+        e.preventDefault();
+        dropzone.classList.remove("border-gray-300");
+        dropzone.classList.add("border-blue-500", "bg-blue-50");
+      });
+
+      // Drag leave
+      dropzone.addEventListener("dragleave", () => {
+        dropzone.classList.remove("border-blue-500", "bg-blue-50");
+        dropzone.classList.add("border-gray-300");
+      });
+
+      // Drop handler
+      dropzone.addEventListener("drop", (e) => {
+        e.preventDefault();
+        dropzone.classList.remove("border-blue-500", "bg-blue-50");
+        dropzone.classList.add("border-gray-300");
+
+        const files = e.dataTransfer.files;
+        if (files.length > 0 && files[0].type.startsWith("image/")) {
+          fileInput.files = files;
+          filenameDisplay.textContent = files[0].name;
+        } else {
+          filenameDisplay.textContent = "Please upload a valid image file.";
         }
+      });
 
-        init() {
-          this.updateIndicator();
-          this.bindEvents();
-          this.updateActiveStates();
+      // File input change handler
+      fileInput.addEventListener("change", () => {
+        if (fileInput.files.length > 0) {
+          const file = fileInput.files[0];
+          if (file.type.startsWith("image/")) {
+            filenameDisplay.textContent = file.name;
+          } else {
+            filenameDisplay.textContent = "Invalid file type.";
+          }
         }
-
-        bindEvents() {
-          this.tabButtons.forEach((button, index) => {
-            button.addEventListener("click", () => {
-              this.switchTab(index);
-            });
-          });
-
-          // Keyboard navigation
-          document.addEventListener("keydown", (e) => {
-            if (e.key === "ArrowLeft" && this.activeTab > 0) {
-              this.switchTab(this.activeTab - 1);
-            } else if (
-              e.key === "ArrowRight" &&
-              this.activeTab < this.tabButtons.length - 1
-            ) {
-              this.switchTab(this.activeTab + 1);
-            }
-          });
-
-          // Handle window resize for indicator positioning
-          window.addEventListener("resize", () => {
-            this.updateIndicator();
-          });
-        }
-
-        switchTab(index) {
-          if (index === this.activeTab) return;
-
-          // Remove active class from current tab and panel
-          this.tabButtons[this.activeTab].classList.remove("active");
-          this.tabPanels[this.activeTab].classList.remove("active");
-
-          // Add active class to new tab and panel
-          this.activeTab = index;
-          this.tabButtons[this.activeTab].classList.add("active");
-          this.tabPanels[this.activeTab].classList.add("active");
-
-          // Update indicator position and button states
-          this.updateIndicator();
-          this.updateActiveStates();
-
-          // Add a subtle animation effect
-          this.tabButtons[this.activeTab].style.transform = "scale(0.95)";
-          setTimeout(() => {
-            this.tabButtons[this.activeTab].style.transform = "scale(1)";
-          }, 150);
-        }
-
-        updateActiveStates() {
-          this.tabButtons.forEach((button, index) => {
-            if (index === this.activeTab) {
-              button.classList.add("text-white");
-              button.classList.remove("text-gray-600");
-            } else {
-              button.classList.remove("text-white");
-              button.classList.add("text-gray-600");
-            }
-          });
-        }
-
-        updateIndicator() {
-          const activeButton = this.tabButtons[this.activeTab];
-          const buttonRect = activeButton.getBoundingClientRect();
-          const containerRect =
-            activeButton.parentElement.getBoundingClientRect();
-
-          const left = buttonRect.left - containerRect.left;
-          const width = buttonRect.width;
-
-          this.tabIndicator.style.left = `${left}px`;
-          this.tabIndicator.style.width = `${width}px`;
-        }
-      }
-
-      // Initialize the tab component when the page loads
-      document.addEventListener("DOMContentLoaded", () => {
-        new TabComponent();
       });
     </script>
     <script src="/app.js"></script>
