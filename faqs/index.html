@@ -1,0 +1,3108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Estefarya - Hair Transplant Hero</title>
+    <link href="/dist/output.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+  </head>
+  <body class="font-manrope">
+    <!-- Main Navigation -->
+    <nav
+      class="z-[999] sticky top-0 left-0 w-full bg-white shadow-sm border-b border-gray-200"
+    >
+      <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+          <!-- Logo -->
+          <div class="flex-shrink-0">
+            <h1 class="text-2xl font-bold text-gray-900">estefarya</h1>
+          </div>
+
+          <!-- Desktop Navigation -->
+          <div class="hidden md:block">
+            <div class="ml-10 flex justify-center items-baseline">
+              <a
+                href="/"
+                class="text-dark/60 hover:text-gold px-3 py-2 text-sm font-medium transition-colors"
+                >Home</a
+              >
+
+              <a
+                href="/about-us"
+                class="text-dark/60 hover:text-gold active:bg-gold/60 activetext-white px-4 py-2 rounded-md text-sm font-medium"
+                >About us</a
+              >
+
+              <a
+                href="/reviews"
+                class="text-dark/60 hover:text-gold px-3 py-2 text-sm font-medium transition-colors"
+                >Reviews</a
+              >
+
+              <a
+                href="/blog"
+                class="text-dark/60 hover:text-gold px-3 py-2 text-sm font-medium transition-colors"
+                >Blog</a
+              >
+
+              <a
+                href="/faqs"
+                class="text-dark/60 hover:text-gold px-3 py-2 text-sm font-medium transition-colors"
+                >FAQs</a
+              >
+
+              <!-- Treatments Dropdown -->
+              <div class="relative" id="treatments-dropdown">
+                <button
+                  class="text-dark/60 hover:text-gold px-3 py-2 text-sm font-medium flex items-center transition-colors"
+                  onclick="toggleDropdown('treatments')"
+                >
+                  Treatments
+                  <svg
+                    class="ml-1 h-4 w-4 transform transition-transform"
+                    id="treatments-arrow"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                </button>
+                <div
+                  class="dropdown-menu absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg ring-1 ring-black ring-opacity-5 z-50"
+                  id="treatments-menu"
+                >
+                  <div class="py-1">
+                    <a
+                      href="/treatments#hair"
+                      class="block px-4 py-2 text-sm text-dark/60 hover:bg-gold"
+                      >Hair transplants</a
+                    >
+                    <a
+                      href="/treatments#dental"
+                      class="block px-4 py-2 text-sm text-dark/60 hover:bg-gold"
+                      >Dental Surgery</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <a
+                href="/travel-info"
+                class="text-dark/60 hover:text-gold px-3 py-2 text-sm font-medium transition-colors"
+                >Travel Info</a
+              >
+
+              <a
+                href="/contact"
+                class="text-dark/60 hover:text-gold px-3 py-2 text-sm font-medium transition-colors"
+                >Contact</a
+              >
+
+              <!-- Language Dropdown -->
+              <div class="relative" id="lang-dropdown">
+                <button
+                  class="text-dark/60 hover:text-gold px-3 py-2 text-sm font-medium flex items-center transition-colors"
+                  onclick="toggleDropdown('lang')"
+                >
+                  Eng
+                  <svg
+                    class="ml-1 h-4 w-4 transform transition-transform"
+                    id="lang-arrow"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                </button>
+                <div
+                  class="dropdown-menu absolute right-0 mt-2 w-32 bg-white rounded-md shadow-lg ring-1 ring-black ring-opacity-5 z-50"
+                  id="lang-menu"
+                >
+                  <div class="py-1">
+                    <a
+                      href="#"
+                      class="block px-4 py-2 text-sm text-dark/60 hover:bg-gold font-medium"
+                      >English</a
+                    >
+                    <a
+                      href="#"
+                      class="block px-4 py-2 text-sm text-dark/60 hover:bg-gold"
+                      >Español</a
+                    >
+                    <a
+                      href="#"
+                      class="block px-4 py-2 text-sm text-dark/60 hover:bg-gold"
+                      >Français</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Book Appointment Button -->
+          <div class="hidden md:block">
+            <button
+              class="bg-gray-900 text-white px-6 py-4 rounded-md text-sm font-medium hover:bg-gray-800 transition-colors flex items-center gap-2"
+            >
+              Book an appointment
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 18 18"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M13.5 1.5V3M4.5 1.5V3"
+                  stroke="#FCFCFC"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M8.99662 9.75H9.00338M8.99662 12.75H9.00338M11.9933 9.75H12M6 9.75H6.00673M6 12.75H6.00673"
+                  stroke="#FCFCFC"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M2.625 6H15.375"
+                  stroke="#FCFCFC"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M1.875 9.1824C1.875 5.91446 1.875 4.28046 2.81409 3.26523C3.75318 2.25 5.26462 2.25 8.2875 2.25H9.7125C12.7354 2.25 14.2469 2.25 15.1859 3.26523C16.125 4.28046 16.125 5.91446 16.125 9.1824V9.5676C16.125 12.8356 16.125 14.4695 15.1859 15.4848C14.2469 16.5 12.7354 16.5 9.7125 16.5H8.2875C5.26462 16.5 3.75318 16.5 2.81409 15.4848C1.875 14.4695 1.875 12.8356 1.875 9.5676V9.1824Z"
+                  stroke="#FCFCFC"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M2.25 6H15.75"
+                  stroke="#FCFCFC"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </div>
+
+          <!-- Mobile menu button -->
+          <div class="md:hidden">
+            <button
+              class="text-dark/60 hover:text-gold p-2"
+              onclick="toggleMobileMenu()"
+            >
+              <svg
+                width="24"
+                height="25"
+                viewBox="0 0 24 25"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M20 12.3271H10"
+                  stroke="#2A2927"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M20 5.32715H4"
+                  stroke="#2A2927"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M20 19.3271H4"
+                  stroke="#2A2927"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile menu -->
+      <div
+        class="mobile-menu fixed inset-y-0 left-0 w-full bg-white shadow-lg z-50 md:hidden"
+        id="mobile-menu"
+      >
+        <div class="flex flex-col h-full">
+          <!-- Mobile header -->
+          <div class="flex justify-between items-center p-4 border-b">
+            <h1 class="text-xl font-bold text-gray-900">estefarya</h1>
+            <button onclick="toggleMobileMenu()" class="text-gray-700 p-2">
+              <svg
+                class="h-6 w-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12"
+                ></path>
+              </svg>
+            </button>
+          </div>
+
+          <!-- Mobile navigation links -->
+          <div class="flex-1 overflow-y-auto p-4">
+            <div class="space-y-4 mx-auto">
+              <a
+                href="/"
+                class="block text-dark/60 text-lg font-medium py-2 border-b border-gray-100"
+                >Home</a
+              >
+              <a
+                href="/about-us"
+                class="block bg-gray-100 text-gray-900 text-lg font-medium py-2 px-3 rounded"
+                >About us</a
+              >
+              <a
+                href="reviews"
+                class="block text-dark/60 text-lg font-medium py-2 border-b border-gray-100"
+                >Reviews</a
+              >
+              <a
+                href="/blog"
+                class="block text-dark/60 text-lg font-medium py-2 border-b border-gray-100"
+                >Blog</a
+              >
+              <a
+                href="/faqs"
+                class="block text-dark/60 text-lg font-medium py-2 border-b border-gray-100"
+                >FAQs</a
+              >
+
+              <!-- Mobile Treatments Section -->
+              <div class="border-b border-gray-100">
+                <button
+                  class="w-full text-left text-dark/60 text-lg font-medium py-2 flex justify-between items-center"
+                  onclick="toggleMobileDropdown('mobile-treatments')"
+                >
+                  Treatments
+                  <svg
+                    class="h-5 w-5 transform transition-transform"
+                    id="mobile-treatments-arrow"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                </button>
+                <div
+                  class="hidden ml-4 mt-2 space-y-2"
+                  id="mobile-treatments-menu"
+                >
+                  <a href="#" class="block text-gray-600 py-1"
+                    >Facial Treatments</a
+                  >
+                  <a href="#" class="block text-gray-600 py-1"
+                    >Body Treatments</a
+                  >
+                  <a href="#" class="block text-gray-600 py-1"
+                    >Hair Treatments</a
+                  >
+                  <a href="#" class="block text-gray-600 py-1"
+                    >Wellness Packages</a
+                  >
+                </div>
+              </div>
+
+              <a
+                href="#"
+                class="block text-dark/60 text-lg font-medium py-2 border-b border-gray-100"
+                >Travel Info</a
+              >
+              <a
+                href="#"
+                class="block text-dark/60 text-lg font-medium py-2 border-b border-gray-100"
+                >Contact</a
+              >
+
+              <!-- Mobile Language Section -->
+              <div class="border-b border-gray-100">
+                <button
+                  class="w-full text-left text-dark/60 text-lg font-medium py-2 flex justify-between items-center"
+                  onclick="toggleMobileDropdown('mobile-lang')"
+                >
+                  Language (Eng)
+                  <svg
+                    class="h-5 w-5 transform transition-transform"
+                    id="mobile-lang-arrow"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                </button>
+                <div class="hidden ml-4 mt-2 space-y-2" id="mobile-lang-menu">
+                  <a href="#" class="block text-gray-600 py-1 font-medium"
+                    >English</a
+                  >
+                  <a href="#" class="block text-gray-600 py-1">Español</a>
+                  <a href="#" class="block text-gray-600 py-1">Français</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mobile Book Appointment Button -->
+          <div class="p-4 border-t">
+            <button
+              class="w-full bg-gray-900 text-white px-6 py-5 rounded-md text-lg font-medium hover:bg-gray-800 transition-colors flex items-center justify-center gap-2"
+            >
+              Book an appointment
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 18 18"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M13.5 1.5V3M4.5 1.5V3"
+                  stroke="#FCFCFC"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M8.99662 9.75H9.00338M8.99662 12.75H9.00338M11.9933 9.75H12M6 9.75H6.00673M6 12.75H6.00673"
+                  stroke="#FCFCFC"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M2.625 6H15.375"
+                  stroke="#FCFCFC"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M1.875 9.1824C1.875 5.91446 1.875 4.28046 2.81409 3.26523C3.75318 2.25 5.26462 2.25 8.2875 2.25H9.7125C12.7354 2.25 14.2469 2.25 15.1859 3.26523C16.125 4.28046 16.125 5.91446 16.125 9.1824V9.5676C16.125 12.8356 16.125 14.4695 15.1859 15.4848C14.2469 16.5 12.7354 16.5 9.7125 16.5H8.2875C5.26462 16.5 3.75318 16.5 2.81409 15.4848C1.875 14.4695 1.875 12.8356 1.875 9.5676V9.1824Z"
+                  stroke="#FCFCFC"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M2.25 6H15.75"
+                  stroke="#FCFCFC"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <section class="">
+        <div
+          class="max-w-screen-2x py-16 lg:py-[100px] pb-0 lg:pb-0 px-4 lg:px-8 mx-auto"
+        >
+          <!-- Header -->
+          <div class="max-w-2xl mx-auto text-center mb-16 space-y-5">
+            <span
+              class="block w-fit mx-auto text-sm lg:text-base bg-gold/20 text-dark/60 px-4 p-2 rounded-full font-medium"
+              >Answers to your most important questions</span
+            >
+            <h2
+              class="text-5xl lg:text-7xl leading-tight tracking-tighter font-semibold text-gray-900 mb-4"
+            >
+              Clarity for every step of the journey
+            </h2>
+            <p class="mx-auto text-dark/60 font-semibold max-w-xl">
+              From travel to treatment, we've answered your most common
+              questions so you can feel prepared, informed, and fully at ease —
+              no matter where you are in your decision-making process.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- section -->
+      <section class="">
+        <div class="max-w-screen-2xl py-16 lg:py-[100px] px-4 lg:px-8 mx-auto">
+          <!-- Header -->
+          <div class="text-center mb-8 lg:mb-16">
+            <h2 class="text-2xl lg:text-5xl font-semibold text-gray-900 mb-4">
+              We have answers to
+              <br />
+              <span class="text-gold">your questions</span>
+            </h2>
+          </div>
+          <!-- Tabs List -->
+          <!-- The tabs functionality are controlled by the scripts at the bottom of this page  -->
+          <!-- I created "educational", "news", "client", and "treatment" tabs -->
+          <!-- If you want to create a new tab, create a new button and set the data-tab value to the name of the tab. Next, create a container div and give the same name to the div -->
+          <div
+            class="max-w-2xl font-bold mx-auto relative bg-gold/20 rounded-xl p-1.5 mb-8"
+            id="tabsList"
+          >
+            <div
+              class="tab-indicator absolute top-1.5 bottom-1.5 bg-white rounded-lg shadow-lg"
+              id="tabIndicator"
+            ></div>
+            <div class="flex relative z-10">
+              <button
+                class="tab-button flex-1 px-3 py-3 text-sm font-medium !text-gray-600 hover:text-gray-800 rounded-lg transition-all duration-300 hover:-translate-y-0.5 active"
+                data-tab="general"
+              >
+                General FAQs
+              </button>
+              <button
+                class="tab-button flex-1 px-3 py-3 text-sm font-medium !text-gray-600 hover:text-gray-800 rounded-lg transition-all duration-300 hover:-translate-y-0.5 active"
+                data-tab="procedure"
+              >
+                Procedure specific FAQs
+              </button>
+              <button
+                class="tab-button flex-1 px-3 py-3 text-sm font-medium !text-gray-600 hover:text-gray-800 rounded-lg transition-all duration-300 hover:-translate-y-0.5 active"
+                data-tab="travel"
+              >
+                Travel FAQs
+              </button>
+            </div>
+          </div>
+
+          <div id="general" class="tab-panel active grid gap-y-16 py-12">
+            <!-- FAQ Box  -->
+            <div class="space-y-4 mx-auto">
+              <h2 class="font-bold text-2xl">Hair transplant</h2>
+              <div
+                class="space-y-2 p-2 bg-gold/20 rounded-xl max-w-3xl mx-auto"
+              >
+                <!-- FAQ Item 1 - Expanded by default -->
+                <div
+                  class="bg-white rounded-lg shadow-sm border border-gray-200"
+                >
+                  <button
+                    class="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 transition-colors duration-200"
+                    onclick="toggleAccordion(this)"
+                  >
+                    <span class="text-gray-800 font-medium"
+                      >How long does the recovery process take after a hair
+                      transplant or surgery?</span
+                    >
+                    <svg
+                      class="w-5 h-5 text-gray-400 transform transition-transform duration-200 rotate-180"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M19 9l-7 7-7-7"
+                      ></path>
+                    </svg>
+                  </button>
+                  <div class="accordion-content open px-6 pb-4">
+                    <p class="text-gray-600 leading-relaxed">
+                      Recovery time depends on the procedure, but most clients
+                      return to light activities within a few days. For hair
+                      transplants, visible healing typically occurs within 7-10
+                      days, while plastic surgery recovery may take longer.
+                      You'll receive a personalized aftercare plan and 24/7
+                      support to guide your recovery smoothly.
+                    </p>
+                    <div class="flex items-center mt-4 space-x-4">
+                      <span class="text-sm text-gray-500"
+                        >Was this content helpful</span
+                      >
+                      <button
+                        class="flex items-center space-x-1 text-sm text-gray-500 hover:text-green-600 transition-colors"
+                      >
+                        <svg
+                          class="w-4 h-4"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V8a2 2 0 00-2-2H4.222a2 2 0 00-1.897 1.367L2 9m9 1v8a2 2 0 01-2 2H4.222a2 2 0 01-1.897-1.367L2 17m9-8v2m0 0v8a2 2 0 002 2h4.017a2 2 0 001.958-1.586l2.5-8A2 2 0 0016.517 8H14V6a2 2 0 00-2-2h-1m3 0H9a2 2 0 000 4v1m3-5a2 2 0 016 0v1"
+                          ></path>
+                        </svg>
+                      </button>
+                      <button
+                        class="flex items-center space-x-1 text-sm text-gray-500 hover:text-red-600 transition-colors"
+                      >
+                        <svg
+                          class="w-4 h-4"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M10 14H5.236a2 2 0 01-1.789-2.894l3.5-7A2 2 0 018.736 3h4.018c.163 0 .326.02.485.06L17 4m-7 10v2a2 2 0 002 2h4.764a2 2 0 001.789-2.894l-3.5-7A2 2 0 0013.236 4H9m1 10v-2m0 0V4a2 2 0 012-2h4.023a2 2 0 011.958 1.586l2.5 8A2 2 0 0117.477 14H15V16a2 2 0 01-2 2h-1m-3-4H9a2 2 0 000-4v1m3 5a2 2 0 01-6 0v-1"
+                          ></path>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div
+                  class="bg-white rounded-lg shadow-sm border border-gray-200"
+                >
+                  <button
+                    class="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 transition-colors duration-200"
+                    onclick="toggleAccordion(this)"
+                  >
+                    <span class="text-gray-800 font-medium"
+                      >Can Estefarya assist with travel and accommodation
+                      arrangements?</span
+                    >
+                    <svg
+                      class="w-5 h-5 text-gray-400 transform transition-transform duration-200"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+                      ></path>
+                    </svg>
+                  </button>
+                  <div class="accordion-content px-6 pb-4">
+                    <p class="text-gray-600 leading-relaxed">
+                      Yes, Estefarya provides comprehensive travel assistance
+                      including hotel bookings, airport transfers, and local
+                      transportation arrangements. Our dedicated travel team
+                      ensures your journey is comfortable and stress-free from
+                      arrival to departure.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div
+                  class="bg-white rounded-lg shadow-sm border border-gray-200"
+                >
+                  <button
+                    class="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 transition-colors duration-200"
+                    onclick="toggleAccordion(this)"
+                  >
+                    <span class="text-gray-800 font-medium"
+                      >Are consultations available online before I travel?</span
+                    >
+                    <svg
+                      class="w-5 h-5 text-gray-400 transform transition-transform duration-200"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+                      ></path>
+                    </svg>
+                  </button>
+                  <div class="accordion-content px-6 pb-4">
+                    <p class="text-gray-600 leading-relaxed">
+                      Absolutely! We offer virtual consultations with our expert
+                      medical team before your trip. This allows us to assess
+                      your needs, discuss treatment options, and create a
+                      personalized treatment plan, ensuring you're fully
+                      prepared for your visit.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div
+                  class="bg-white rounded-lg shadow-sm border border-gray-200"
+                >
+                  <button
+                    class="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 transition-colors duration-200"
+                    onclick="toggleAccordion(this)"
+                  >
+                    <span class="text-gray-800 font-medium"
+                      >Is the procedure painful, and will I be under
+                      anesthesia?</span
+                    >
+                    <svg
+                      class="w-5 h-5 text-gray-400 transform transition-transform duration-200"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+                      ></path>
+                    </svg>
+                  </button>
+                  <div class="accordion-content px-6 pb-4">
+                    <p class="text-gray-600 leading-relaxed">
+                      Most procedures are performed under local anesthesia,
+                      ensuring you remain comfortable throughout. For more
+                      extensive surgeries, general anesthesia may be used. Our
+                      anesthesiologists will discuss the best option for your
+                      specific procedure and medical history.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- FAQ Item 5 -->
+                <div
+                  class="bg-white rounded-lg shadow-sm border border-gray-200"
+                >
+                  <button
+                    class="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 transition-colors duration-200"
+                    onclick="toggleAccordion(this)"
+                  >
+                    <span class="text-gray-800 font-medium"
+                      >How soon will I see results from my treatment?</span
+                    >
+                    <svg
+                      class="w-5 h-5 text-gray-400 transform transition-transform duration-200"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+                      ></path>
+                    </svg>
+                  </button>
+                  <div class="accordion-content px-6 pb-4">
+                    <p class="text-gray-600 leading-relaxed">
+                      Results vary depending on the treatment type. Hair
+                      transplant results typically become visible after 3-4
+                      months, with full results appearing within 12-18 months.
+                      Cosmetic procedures may show immediate improvements, with
+                      final results visible once swelling subsides.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- FAQ Item 6 -->
+                <div
+                  class="bg-white rounded-lg shadow-sm border border-gray-200"
+                >
+                  <button
+                    class="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 transition-colors duration-200"
+                    onclick="toggleAccordion(this)"
+                  >
+                    <span class="text-gray-800 font-medium"
+                      >Will I have a natural look after the procedure?</span
+                    >
+                    <svg
+                      class="w-5 h-5 text-gray-400 transform transition-transform duration-200"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+                      ></path>
+                    </svg>
+                  </button>
+                  <div class="accordion-content px-6 pb-4">
+                    <p class="text-gray-600 leading-relaxed">
+                      Our surgeons are highly skilled in creating
+                      natural-looking results that enhance your features
+                      harmoniously. We use advanced techniques and take great
+                      care in design and placement to ensure results look
+                      completely natural and complement your facial structure.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="space-y-4 mx-auto">
+              <h2 class="font-bold text-2xl">Dental surgery</h2>
+              <div
+                class="space-y-2 p-2 bg-gold/20 rounded-xl max-w-3xl mx-auto"
+              >
+                <!-- FAQ Item 1 - Expanded by default -->
+                <div
+                  class="bg-white rounded-lg shadow-sm border border-gray-200"
+                >
+                  <button
+                    class="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 transition-colors duration-200"
+                    onclick="toggleAccordion(this)"
+                  >
+                    <span class="text-gray-800 font-medium"
+                      >How long does the recovery process take after a hair
+                      transplant or surgery?</span
+                    >
+                    <svg
+                      class="w-5 h-5 text-gray-400 transform transition-transform duration-200 rotate-180"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M19 9l-7 7-7-7"
+                      ></path>
+                    </svg>
+                  </button>
+                  <div class="accordion-content open px-6 pb-4">
+                    <p class="text-gray-600 leading-relaxed">
+                      Recovery time depends on the procedure, but most clients
+                      return to light activities within a few days. For hair
+                      transplants, visible healing typically occurs within 7-10
+                      days, while plastic surgery recovery may take longer.
+                      You'll receive a personalized aftercare plan and 24/7
+                      support to guide your recovery smoothly.
+                    </p>
+                    <div class="flex items-center mt-4 space-x-4">
+                      <span class="text-sm text-gray-500"
+                        >Was this content helpful</span
+                      >
+                      <button
+                        class="flex items-center space-x-1 text-sm text-gray-500 hover:text-green-600 transition-colors"
+                      >
+                        <svg
+                          class="w-4 h-4"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V8a2 2 0 00-2-2H4.222a2 2 0 00-1.897 1.367L2 9m9 1v8a2 2 0 01-2 2H4.222a2 2 0 01-1.897-1.367L2 17m9-8v2m0 0v8a2 2 0 002 2h4.017a2 2 0 001.958-1.586l2.5-8A2 2 0 0016.517 8H14V6a2 2 0 00-2-2h-1m3 0H9a2 2 0 000 4v1m3-5a2 2 0 016 0v1"
+                          ></path>
+                        </svg>
+                      </button>
+                      <button
+                        class="flex items-center space-x-1 text-sm text-gray-500 hover:text-red-600 transition-colors"
+                      >
+                        <svg
+                          class="w-4 h-4"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M10 14H5.236a2 2 0 01-1.789-2.894l3.5-7A2 2 0 018.736 3h4.018c.163 0 .326.02.485.06L17 4m-7 10v2a2 2 0 002 2h4.764a2 2 0 001.789-2.894l-3.5-7A2 2 0 0013.236 4H9m1 10v-2m0 0V4a2 2 0 012-2h4.023a2 2 0 011.958 1.586l2.5 8A2 2 0 0117.477 14H15V16a2 2 0 01-2 2h-1m-3-4H9a2 2 0 000-4v1m3 5a2 2 0 01-6 0v-1"
+                          ></path>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div
+                  class="bg-white rounded-lg shadow-sm border border-gray-200"
+                >
+                  <button
+                    class="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 transition-colors duration-200"
+                    onclick="toggleAccordion(this)"
+                  >
+                    <span class="text-gray-800 font-medium"
+                      >Can Estefarya assist with travel and accommodation
+                      arrangements?</span
+                    >
+                    <svg
+                      class="w-5 h-5 text-gray-400 transform transition-transform duration-200"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+                      ></path>
+                    </svg>
+                  </button>
+                  <div class="accordion-content px-6 pb-4">
+                    <p class="text-gray-600 leading-relaxed">
+                      Yes, Estefarya provides comprehensive travel assistance
+                      including hotel bookings, airport transfers, and local
+                      transportation arrangements. Our dedicated travel team
+                      ensures your journey is comfortable and stress-free from
+                      arrival to departure.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div
+                  class="bg-white rounded-lg shadow-sm border border-gray-200"
+                >
+                  <button
+                    class="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 transition-colors duration-200"
+                    onclick="toggleAccordion(this)"
+                  >
+                    <span class="text-gray-800 font-medium"
+                      >Are consultations available online before I travel?</span
+                    >
+                    <svg
+                      class="w-5 h-5 text-gray-400 transform transition-transform duration-200"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+                      ></path>
+                    </svg>
+                  </button>
+                  <div class="accordion-content px-6 pb-4">
+                    <p class="text-gray-600 leading-relaxed">
+                      Absolutely! We offer virtual consultations with our expert
+                      medical team before your trip. This allows us to assess
+                      your needs, discuss treatment options, and create a
+                      personalized treatment plan, ensuring you're fully
+                      prepared for your visit.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div
+                  class="bg-white rounded-lg shadow-sm border border-gray-200"
+                >
+                  <button
+                    class="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 transition-colors duration-200"
+                    onclick="toggleAccordion(this)"
+                  >
+                    <span class="text-gray-800 font-medium"
+                      >Is the procedure painful, and will I be under
+                      anesthesia?</span
+                    >
+                    <svg
+                      class="w-5 h-5 text-gray-400 transform transition-transform duration-200"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+                      ></path>
+                    </svg>
+                  </button>
+                  <div class="accordion-content px-6 pb-4">
+                    <p class="text-gray-600 leading-relaxed">
+                      Most procedures are performed under local anesthesia,
+                      ensuring you remain comfortable throughout. For more
+                      extensive surgeries, general anesthesia may be used. Our
+                      anesthesiologists will discuss the best option for your
+                      specific procedure and medical history.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- FAQ Item 5 -->
+                <div
+                  class="bg-white rounded-lg shadow-sm border border-gray-200"
+                >
+                  <button
+                    class="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 transition-colors duration-200"
+                    onclick="toggleAccordion(this)"
+                  >
+                    <span class="text-gray-800 font-medium"
+                      >How soon will I see results from my treatment?</span
+                    >
+                    <svg
+                      class="w-5 h-5 text-gray-400 transform transition-transform duration-200"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+                      ></path>
+                    </svg>
+                  </button>
+                  <div class="accordion-content px-6 pb-4">
+                    <p class="text-gray-600 leading-relaxed">
+                      Results vary depending on the treatment type. Hair
+                      transplant results typically become visible after 3-4
+                      months, with full results appearing within 12-18 months.
+                      Cosmetic procedures may show immediate improvements, with
+                      final results visible once swelling subsides.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- FAQ Item 6 -->
+                <div
+                  class="bg-white rounded-lg shadow-sm border border-gray-200"
+                >
+                  <button
+                    class="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 transition-colors duration-200"
+                    onclick="toggleAccordion(this)"
+                  >
+                    <span class="text-gray-800 font-medium"
+                      >Will I have a natural look after the procedure?</span
+                    >
+                    <svg
+                      class="w-5 h-5 text-gray-400 transform transition-transform duration-200"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+                      ></path>
+                    </svg>
+                  </button>
+                  <div class="accordion-content px-6 pb-4">
+                    <p class="text-gray-600 leading-relaxed">
+                      Our surgeons are highly skilled in creating
+                      natural-looking results that enhance your features
+                      harmoniously. We use advanced techniques and take great
+                      care in design and placement to ensure results look
+                      completely natural and complement your facial structure.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="space-y-4 mx-auto">
+              <h2 class="font-bold text-2xl">Plastic surgery</h2>
+              <div
+                class="space-y-2 p-2 bg-gold/20 rounded-xl max-w-3xl mx-auto"
+              >
+                <!-- FAQ Item 1 - Expanded by default -->
+                <div
+                  class="bg-white rounded-lg shadow-sm border border-gray-200"
+                >
+                  <button
+                    class="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 transition-colors duration-200"
+                    onclick="toggleAccordion(this)"
+                  >
+                    <span class="text-gray-800 font-medium"
+                      >How long does the recovery process take after a hair
+                      transplant or surgery?</span
+                    >
+                    <svg
+                      class="w-5 h-5 text-gray-400 transform transition-transform duration-200 rotate-180"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M19 9l-7 7-7-7"
+                      ></path>
+                    </svg>
+                  </button>
+                  <div class="accordion-content open px-6 pb-4">
+                    <p class="text-gray-600 leading-relaxed">
+                      Recovery time depends on the procedure, but most clients
+                      return to light activities within a few days. For hair
+                      transplants, visible healing typically occurs within 7-10
+                      days, while plastic surgery recovery may take longer.
+                      You'll receive a personalized aftercare plan and 24/7
+                      support to guide your recovery smoothly.
+                    </p>
+                    <div class="flex items-center mt-4 space-x-4">
+                      <span class="text-sm text-gray-500"
+                        >Was this content helpful</span
+                      >
+                      <button
+                        class="flex items-center space-x-1 text-sm text-gray-500 hover:text-green-600 transition-colors"
+                      >
+                        <svg
+                          class="w-4 h-4"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V8a2 2 0 00-2-2H4.222a2 2 0 00-1.897 1.367L2 9m9 1v8a2 2 0 01-2 2H4.222a2 2 0 01-1.897-1.367L2 17m9-8v2m0 0v8a2 2 0 002 2h4.017a2 2 0 001.958-1.586l2.5-8A2 2 0 0016.517 8H14V6a2 2 0 00-2-2h-1m3 0H9a2 2 0 000 4v1m3-5a2 2 0 016 0v1"
+                          ></path>
+                        </svg>
+                      </button>
+                      <button
+                        class="flex items-center space-x-1 text-sm text-gray-500 hover:text-red-600 transition-colors"
+                      >
+                        <svg
+                          class="w-4 h-4"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M10 14H5.236a2 2 0 01-1.789-2.894l3.5-7A2 2 0 018.736 3h4.018c.163 0 .326.02.485.06L17 4m-7 10v2a2 2 0 002 2h4.764a2 2 0 001.789-2.894l-3.5-7A2 2 0 0013.236 4H9m1 10v-2m0 0V4a2 2 0 012-2h4.023a2 2 0 011.958 1.586l2.5 8A2 2 0 0117.477 14H15V16a2 2 0 01-2 2h-1m-3-4H9a2 2 0 000-4v1m3 5a2 2 0 01-6 0v-1"
+                          ></path>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div
+                  class="bg-white rounded-lg shadow-sm border border-gray-200"
+                >
+                  <button
+                    class="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 transition-colors duration-200"
+                    onclick="toggleAccordion(this)"
+                  >
+                    <span class="text-gray-800 font-medium"
+                      >Can Estefarya assist with travel and accommodation
+                      arrangements?</span
+                    >
+                    <svg
+                      class="w-5 h-5 text-gray-400 transform transition-transform duration-200"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+                      ></path>
+                    </svg>
+                  </button>
+                  <div class="accordion-content px-6 pb-4">
+                    <p class="text-gray-600 leading-relaxed">
+                      Yes, Estefarya provides comprehensive travel assistance
+                      including hotel bookings, airport transfers, and local
+                      transportation arrangements. Our dedicated travel team
+                      ensures your journey is comfortable and stress-free from
+                      arrival to departure.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div
+                  class="bg-white rounded-lg shadow-sm border border-gray-200"
+                >
+                  <button
+                    class="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 transition-colors duration-200"
+                    onclick="toggleAccordion(this)"
+                  >
+                    <span class="text-gray-800 font-medium"
+                      >Are consultations available online before I travel?</span
+                    >
+                    <svg
+                      class="w-5 h-5 text-gray-400 transform transition-transform duration-200"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+                      ></path>
+                    </svg>
+                  </button>
+                  <div class="accordion-content px-6 pb-4">
+                    <p class="text-gray-600 leading-relaxed">
+                      Absolutely! We offer virtual consultations with our expert
+                      medical team before your trip. This allows us to assess
+                      your needs, discuss treatment options, and create a
+                      personalized treatment plan, ensuring you're fully
+                      prepared for your visit.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div
+                  class="bg-white rounded-lg shadow-sm border border-gray-200"
+                >
+                  <button
+                    class="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 transition-colors duration-200"
+                    onclick="toggleAccordion(this)"
+                  >
+                    <span class="text-gray-800 font-medium"
+                      >Is the procedure painful, and will I be under
+                      anesthesia?</span
+                    >
+                    <svg
+                      class="w-5 h-5 text-gray-400 transform transition-transform duration-200"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+                      ></path>
+                    </svg>
+                  </button>
+                  <div class="accordion-content px-6 pb-4">
+                    <p class="text-gray-600 leading-relaxed">
+                      Most procedures are performed under local anesthesia,
+                      ensuring you remain comfortable throughout. For more
+                      extensive surgeries, general anesthesia may be used. Our
+                      anesthesiologists will discuss the best option for your
+                      specific procedure and medical history.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- FAQ Item 5 -->
+                <div
+                  class="bg-white rounded-lg shadow-sm border border-gray-200"
+                >
+                  <button
+                    class="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 transition-colors duration-200"
+                    onclick="toggleAccordion(this)"
+                  >
+                    <span class="text-gray-800 font-medium"
+                      >How soon will I see results from my treatment?</span
+                    >
+                    <svg
+                      class="w-5 h-5 text-gray-400 transform transition-transform duration-200"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+                      ></path>
+                    </svg>
+                  </button>
+                  <div class="accordion-content px-6 pb-4">
+                    <p class="text-gray-600 leading-relaxed">
+                      Results vary depending on the treatment type. Hair
+                      transplant results typically become visible after 3-4
+                      months, with full results appearing within 12-18 months.
+                      Cosmetic procedures may show immediate improvements, with
+                      final results visible once swelling subsides.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- FAQ Item 6 -->
+                <div
+                  class="bg-white rounded-lg shadow-sm border border-gray-200"
+                >
+                  <button
+                    class="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 transition-colors duration-200"
+                    onclick="toggleAccordion(this)"
+                  >
+                    <span class="text-gray-800 font-medium"
+                      >Will I have a natural look after the procedure?</span
+                    >
+                    <svg
+                      class="w-5 h-5 text-gray-400 transform transition-transform duration-200"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+                      ></path>
+                    </svg>
+                  </button>
+                  <div class="accordion-content px-6 pb-4">
+                    <p class="text-gray-600 leading-relaxed">
+                      Our surgeons are highly skilled in creating
+                      natural-looking results that enhance your features
+                      harmoniously. We use advanced techniques and take great
+                      care in design and placement to ensure results look
+                      completely natural and complement your facial structure.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="procedure" class="tab-panel active grid gap-y-10">
+            <!-- FAQ Box  -->
+            <div class="space-y-2 p-2 bg-gold/20 rounded-xl max-w-3xl mx-auto">
+              <!-- FAQ Item 1 - Expanded by default -->
+              <div class="bg-white rounded-lg shadow-sm border border-gray-200">
+                <button
+                  class="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 transition-colors duration-200"
+                  onclick="toggleAccordion(this)"
+                >
+                  <span class="text-gray-800 font-medium"
+                    >How long does the recovery process take after a hair
+                    transplant or surgery?</span
+                  >
+                  <svg
+                    class="w-5 h-5 text-gray-400 transform transition-transform duration-200 rotate-180"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    ></path>
+                  </svg>
+                </button>
+                <div class="accordion-content open px-6 pb-4">
+                  <p class="text-gray-600 leading-relaxed">
+                    Recovery time depends on the procedure, but most clients
+                    return to light activities within a few days. For hair
+                    transplants, visible healing typically occurs within 7-10
+                    days, while plastic surgery recovery may take longer. You'll
+                    receive a personalized aftercare plan and 24/7 support to
+                    guide your recovery smoothly.
+                  </p>
+                  <div class="flex items-center mt-4 space-x-4">
+                    <span class="text-sm text-gray-500"
+                      >Was this content helpful</span
+                    >
+                    <button
+                      class="flex items-center space-x-1 text-sm text-gray-500 hover:text-green-600 transition-colors"
+                    >
+                      <svg
+                        class="w-4 h-4"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V8a2 2 0 00-2-2H4.222a2 2 0 00-1.897 1.367L2 9m9 1v8a2 2 0 01-2 2H4.222a2 2 0 01-1.897-1.367L2 17m9-8v2m0 0v8a2 2 0 002 2h4.017a2 2 0 001.958-1.586l2.5-8A2 2 0 0016.517 8H14V6a2 2 0 00-2-2h-1m3 0H9a2 2 0 000 4v1m3-5a2 2 0 016 0v1"
+                        ></path>
+                      </svg>
+                    </button>
+                    <button
+                      class="flex items-center space-x-1 text-sm text-gray-500 hover:text-red-600 transition-colors"
+                    >
+                      <svg
+                        class="w-4 h-4"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M10 14H5.236a2 2 0 01-1.789-2.894l3.5-7A2 2 0 018.736 3h4.018c.163 0 .326.02.485.06L17 4m-7 10v2a2 2 0 002 2h4.764a2 2 0 001.789-2.894l-3.5-7A2 2 0 0013.236 4H9m1 10v-2m0 0V4a2 2 0 012-2h4.023a2 2 0 011.958 1.586l2.5 8A2 2 0 0117.477 14H15V16a2 2 0 01-2 2h-1m-3-4H9a2 2 0 000-4v1m3 5a2 2 0 01-6 0v-1"
+                        ></path>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- FAQ Item 2 -->
+              <div class="bg-white rounded-lg shadow-sm border border-gray-200">
+                <button
+                  class="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 transition-colors duration-200"
+                  onclick="toggleAccordion(this)"
+                >
+                  <span class="text-gray-800 font-medium"
+                    >Can Estefarya assist with travel and accommodation
+                    arrangements?</span
+                  >
+                  <svg
+                    class="w-5 h-5 text-gray-400 transform transition-transform duration-200"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+                    ></path>
+                  </svg>
+                </button>
+                <div class="accordion-content px-6 pb-4">
+                  <p class="text-gray-600 leading-relaxed">
+                    Yes, Estefarya provides comprehensive travel assistance
+                    including hotel bookings, airport transfers, and local
+                    transportation arrangements. Our dedicated travel team
+                    ensures your journey is comfortable and stress-free from
+                    arrival to departure.
+                  </p>
+                </div>
+              </div>
+
+              <!-- FAQ Item 3 -->
+              <div class="bg-white rounded-lg shadow-sm border border-gray-200">
+                <button
+                  class="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 transition-colors duration-200"
+                  onclick="toggleAccordion(this)"
+                >
+                  <span class="text-gray-800 font-medium"
+                    >Are consultations available online before I travel?</span
+                  >
+                  <svg
+                    class="w-5 h-5 text-gray-400 transform transition-transform duration-200"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+                    ></path>
+                  </svg>
+                </button>
+                <div class="accordion-content px-6 pb-4">
+                  <p class="text-gray-600 leading-relaxed">
+                    Absolutely! We offer virtual consultations with our expert
+                    medical team before your trip. This allows us to assess your
+                    needs, discuss treatment options, and create a personalized
+                    treatment plan, ensuring you're fully prepared for your
+                    visit.
+                  </p>
+                </div>
+              </div>
+
+              <!-- FAQ Item 4 -->
+              <div class="bg-white rounded-lg shadow-sm border border-gray-200">
+                <button
+                  class="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 transition-colors duration-200"
+                  onclick="toggleAccordion(this)"
+                >
+                  <span class="text-gray-800 font-medium"
+                    >Is the procedure painful, and will I be under
+                    anesthesia?</span
+                  >
+                  <svg
+                    class="w-5 h-5 text-gray-400 transform transition-transform duration-200"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+                    ></path>
+                  </svg>
+                </button>
+                <div class="accordion-content px-6 pb-4">
+                  <p class="text-gray-600 leading-relaxed">
+                    Most procedures are performed under local anesthesia,
+                    ensuring you remain comfortable throughout. For more
+                    extensive surgeries, general anesthesia may be used. Our
+                    anesthesiologists will discuss the best option for your
+                    specific procedure and medical history.
+                  </p>
+                </div>
+              </div>
+
+              <!-- FAQ Item 5 -->
+              <div class="bg-white rounded-lg shadow-sm border border-gray-200">
+                <button
+                  class="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 transition-colors duration-200"
+                  onclick="toggleAccordion(this)"
+                >
+                  <span class="text-gray-800 font-medium"
+                    >How soon will I see results from my treatment?</span
+                  >
+                  <svg
+                    class="w-5 h-5 text-gray-400 transform transition-transform duration-200"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+                    ></path>
+                  </svg>
+                </button>
+                <div class="accordion-content px-6 pb-4">
+                  <p class="text-gray-600 leading-relaxed">
+                    Results vary depending on the treatment type. Hair
+                    transplant results typically become visible after 3-4
+                    months, with full results appearing within 12-18 months.
+                    Cosmetic procedures may show immediate improvements, with
+                    final results visible once swelling subsides.
+                  </p>
+                </div>
+              </div>
+
+              <!-- FAQ Item 6 -->
+              <div class="bg-white rounded-lg shadow-sm border border-gray-200">
+                <button
+                  class="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 transition-colors duration-200"
+                  onclick="toggleAccordion(this)"
+                >
+                  <span class="text-gray-800 font-medium"
+                    >Will I have a natural look after the procedure?</span
+                  >
+                  <svg
+                    class="w-5 h-5 text-gray-400 transform transition-transform duration-200"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+                    ></path>
+                  </svg>
+                </button>
+                <div class="accordion-content px-6 pb-4">
+                  <p class="text-gray-600 leading-relaxed">
+                    Our surgeons are highly skilled in creating natural-looking
+                    results that enhance your features harmoniously. We use
+                    advanced techniques and take great care in design and
+                    placement to ensure results look completely natural and
+                    complement your facial structure.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="space-y-2 p-2 bg-gold/20 rounded-xl max-w-3xl mx-auto">
+              <!-- FAQ Item 1 - Expanded by default -->
+              <div class="bg-white rounded-lg shadow-sm border border-gray-200">
+                <button
+                  class="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 transition-colors duration-200"
+                  onclick="toggleAccordion(this)"
+                >
+                  <span class="text-gray-800 font-medium"
+                    >How long does the recovery process take after a hair
+                    transplant or surgery?</span
+                  >
+                  <svg
+                    class="w-5 h-5 text-gray-400 transform transition-transform duration-200 rotate-180"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    ></path>
+                  </svg>
+                </button>
+                <div class="accordion-content open px-6 pb-4">
+                  <p class="text-gray-600 leading-relaxed">
+                    Recovery time depends on the procedure, but most clients
+                    return to light activities within a few days. For hair
+                    transplants, visible healing typically occurs within 7-10
+                    days, while plastic surgery recovery may take longer. You'll
+                    receive a personalized aftercare plan and 24/7 support to
+                    guide your recovery smoothly.
+                  </p>
+                  <div class="flex items-center mt-4 space-x-4">
+                    <span class="text-sm text-gray-500"
+                      >Was this content helpful</span
+                    >
+                    <button
+                      class="flex items-center space-x-1 text-sm text-gray-500 hover:text-green-600 transition-colors"
+                    >
+                      <svg
+                        class="w-4 h-4"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V8a2 2 0 00-2-2H4.222a2 2 0 00-1.897 1.367L2 9m9 1v8a2 2 0 01-2 2H4.222a2 2 0 01-1.897-1.367L2 17m9-8v2m0 0v8a2 2 0 002 2h4.017a2 2 0 001.958-1.586l2.5-8A2 2 0 0016.517 8H14V6a2 2 0 00-2-2h-1m3 0H9a2 2 0 000 4v1m3-5a2 2 0 016 0v1"
+                        ></path>
+                      </svg>
+                    </button>
+                    <button
+                      class="flex items-center space-x-1 text-sm text-gray-500 hover:text-red-600 transition-colors"
+                    >
+                      <svg
+                        class="w-4 h-4"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M10 14H5.236a2 2 0 01-1.789-2.894l3.5-7A2 2 0 018.736 3h4.018c.163 0 .326.02.485.06L17 4m-7 10v2a2 2 0 002 2h4.764a2 2 0 001.789-2.894l-3.5-7A2 2 0 0013.236 4H9m1 10v-2m0 0V4a2 2 0 012-2h4.023a2 2 0 011.958 1.586l2.5 8A2 2 0 0117.477 14H15V16a2 2 0 01-2 2h-1m-3-4H9a2 2 0 000-4v1m3 5a2 2 0 01-6 0v-1"
+                        ></path>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- FAQ Item 2 -->
+              <div class="bg-white rounded-lg shadow-sm border border-gray-200">
+                <button
+                  class="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 transition-colors duration-200"
+                  onclick="toggleAccordion(this)"
+                >
+                  <span class="text-gray-800 font-medium"
+                    >Can Estefarya assist with travel and accommodation
+                    arrangements?</span
+                  >
+                  <svg
+                    class="w-5 h-5 text-gray-400 transform transition-transform duration-200"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+                    ></path>
+                  </svg>
+                </button>
+                <div class="accordion-content px-6 pb-4">
+                  <p class="text-gray-600 leading-relaxed">
+                    Yes, Estefarya provides comprehensive travel assistance
+                    including hotel bookings, airport transfers, and local
+                    transportation arrangements. Our dedicated travel team
+                    ensures your journey is comfortable and stress-free from
+                    arrival to departure.
+                  </p>
+                </div>
+              </div>
+
+              <!-- FAQ Item 3 -->
+              <div class="bg-white rounded-lg shadow-sm border border-gray-200">
+                <button
+                  class="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 transition-colors duration-200"
+                  onclick="toggleAccordion(this)"
+                >
+                  <span class="text-gray-800 font-medium"
+                    >Are consultations available online before I travel?</span
+                  >
+                  <svg
+                    class="w-5 h-5 text-gray-400 transform transition-transform duration-200"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+                    ></path>
+                  </svg>
+                </button>
+                <div class="accordion-content px-6 pb-4">
+                  <p class="text-gray-600 leading-relaxed">
+                    Absolutely! We offer virtual consultations with our expert
+                    medical team before your trip. This allows us to assess your
+                    needs, discuss treatment options, and create a personalized
+                    treatment plan, ensuring you're fully prepared for your
+                    visit.
+                  </p>
+                </div>
+              </div>
+
+              <!-- FAQ Item 4 -->
+              <div class="bg-white rounded-lg shadow-sm border border-gray-200">
+                <button
+                  class="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 transition-colors duration-200"
+                  onclick="toggleAccordion(this)"
+                >
+                  <span class="text-gray-800 font-medium"
+                    >Is the procedure painful, and will I be under
+                    anesthesia?</span
+                  >
+                  <svg
+                    class="w-5 h-5 text-gray-400 transform transition-transform duration-200"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+                    ></path>
+                  </svg>
+                </button>
+                <div class="accordion-content px-6 pb-4">
+                  <p class="text-gray-600 leading-relaxed">
+                    Most procedures are performed under local anesthesia,
+                    ensuring you remain comfortable throughout. For more
+                    extensive surgeries, general anesthesia may be used. Our
+                    anesthesiologists will discuss the best option for your
+                    specific procedure and medical history.
+                  </p>
+                </div>
+              </div>
+
+              <!-- FAQ Item 5 -->
+              <div class="bg-white rounded-lg shadow-sm border border-gray-200">
+                <button
+                  class="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 transition-colors duration-200"
+                  onclick="toggleAccordion(this)"
+                >
+                  <span class="text-gray-800 font-medium"
+                    >How soon will I see results from my treatment?</span
+                  >
+                  <svg
+                    class="w-5 h-5 text-gray-400 transform transition-transform duration-200"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+                    ></path>
+                  </svg>
+                </button>
+                <div class="accordion-content px-6 pb-4">
+                  <p class="text-gray-600 leading-relaxed">
+                    Results vary depending on the treatment type. Hair
+                    transplant results typically become visible after 3-4
+                    months, with full results appearing within 12-18 months.
+                    Cosmetic procedures may show immediate improvements, with
+                    final results visible once swelling subsides.
+                  </p>
+                </div>
+              </div>
+
+              <!-- FAQ Item 6 -->
+              <div class="bg-white rounded-lg shadow-sm border border-gray-200">
+                <button
+                  class="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 transition-colors duration-200"
+                  onclick="toggleAccordion(this)"
+                >
+                  <span class="text-gray-800 font-medium"
+                    >Will I have a natural look after the procedure?</span
+                  >
+                  <svg
+                    class="w-5 h-5 text-gray-400 transform transition-transform duration-200"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+                    ></path>
+                  </svg>
+                </button>
+                <div class="accordion-content px-6 pb-4">
+                  <p class="text-gray-600 leading-relaxed">
+                    Our surgeons are highly skilled in creating natural-looking
+                    results that enhance your features harmoniously. We use
+                    advanced techniques and take great care in design and
+                    placement to ensure results look completely natural and
+                    complement your facial structure.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="space-y-2 p-2 bg-gold/20 rounded-xl max-w-3xl mx-auto">
+              <!-- FAQ Item 1 - Expanded by default -->
+              <div class="bg-white rounded-lg shadow-sm border border-gray-200">
+                <button
+                  class="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 transition-colors duration-200"
+                  onclick="toggleAccordion(this)"
+                >
+                  <span class="text-gray-800 font-medium"
+                    >How long does the recovery process take after a hair
+                    transplant or surgery?</span
+                  >
+                  <svg
+                    class="w-5 h-5 text-gray-400 transform transition-transform duration-200 rotate-180"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    ></path>
+                  </svg>
+                </button>
+                <div class="accordion-content open px-6 pb-4">
+                  <p class="text-gray-600 leading-relaxed">
+                    Recovery time depends on the procedure, but most clients
+                    return to light activities within a few days. For hair
+                    transplants, visible healing typically occurs within 7-10
+                    days, while plastic surgery recovery may take longer. You'll
+                    receive a personalized aftercare plan and 24/7 support to
+                    guide your recovery smoothly.
+                  </p>
+                  <div class="flex items-center mt-4 space-x-4">
+                    <span class="text-sm text-gray-500"
+                      >Was this content helpful</span
+                    >
+                    <button
+                      class="flex items-center space-x-1 text-sm text-gray-500 hover:text-green-600 transition-colors"
+                    >
+                      <svg
+                        class="w-4 h-4"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V8a2 2 0 00-2-2H4.222a2 2 0 00-1.897 1.367L2 9m9 1v8a2 2 0 01-2 2H4.222a2 2 0 01-1.897-1.367L2 17m9-8v2m0 0v8a2 2 0 002 2h4.017a2 2 0 001.958-1.586l2.5-8A2 2 0 0016.517 8H14V6a2 2 0 00-2-2h-1m3 0H9a2 2 0 000 4v1m3-5a2 2 0 016 0v1"
+                        ></path>
+                      </svg>
+                    </button>
+                    <button
+                      class="flex items-center space-x-1 text-sm text-gray-500 hover:text-red-600 transition-colors"
+                    >
+                      <svg
+                        class="w-4 h-4"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M10 14H5.236a2 2 0 01-1.789-2.894l3.5-7A2 2 0 018.736 3h4.018c.163 0 .326.02.485.06L17 4m-7 10v2a2 2 0 002 2h4.764a2 2 0 001.789-2.894l-3.5-7A2 2 0 0013.236 4H9m1 10v-2m0 0V4a2 2 0 012-2h4.023a2 2 0 011.958 1.586l2.5 8A2 2 0 0117.477 14H15V16a2 2 0 01-2 2h-1m-3-4H9a2 2 0 000-4v1m3 5a2 2 0 01-6 0v-1"
+                        ></path>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- FAQ Item 2 -->
+              <div class="bg-white rounded-lg shadow-sm border border-gray-200">
+                <button
+                  class="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 transition-colors duration-200"
+                  onclick="toggleAccordion(this)"
+                >
+                  <span class="text-gray-800 font-medium"
+                    >Can Estefarya assist with travel and accommodation
+                    arrangements?</span
+                  >
+                  <svg
+                    class="w-5 h-5 text-gray-400 transform transition-transform duration-200"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+                    ></path>
+                  </svg>
+                </button>
+                <div class="accordion-content px-6 pb-4">
+                  <p class="text-gray-600 leading-relaxed">
+                    Yes, Estefarya provides comprehensive travel assistance
+                    including hotel bookings, airport transfers, and local
+                    transportation arrangements. Our dedicated travel team
+                    ensures your journey is comfortable and stress-free from
+                    arrival to departure.
+                  </p>
+                </div>
+              </div>
+
+              <!-- FAQ Item 3 -->
+              <div class="bg-white rounded-lg shadow-sm border border-gray-200">
+                <button
+                  class="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 transition-colors duration-200"
+                  onclick="toggleAccordion(this)"
+                >
+                  <span class="text-gray-800 font-medium"
+                    >Are consultations available online before I travel?</span
+                  >
+                  <svg
+                    class="w-5 h-5 text-gray-400 transform transition-transform duration-200"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+                    ></path>
+                  </svg>
+                </button>
+                <div class="accordion-content px-6 pb-4">
+                  <p class="text-gray-600 leading-relaxed">
+                    Absolutely! We offer virtual consultations with our expert
+                    medical team before your trip. This allows us to assess your
+                    needs, discuss treatment options, and create a personalized
+                    treatment plan, ensuring you're fully prepared for your
+                    visit.
+                  </p>
+                </div>
+              </div>
+
+              <!-- FAQ Item 4 -->
+              <div class="bg-white rounded-lg shadow-sm border border-gray-200">
+                <button
+                  class="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 transition-colors duration-200"
+                  onclick="toggleAccordion(this)"
+                >
+                  <span class="text-gray-800 font-medium"
+                    >Is the procedure painful, and will I be under
+                    anesthesia?</span
+                  >
+                  <svg
+                    class="w-5 h-5 text-gray-400 transform transition-transform duration-200"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+                    ></path>
+                  </svg>
+                </button>
+                <div class="accordion-content px-6 pb-4">
+                  <p class="text-gray-600 leading-relaxed">
+                    Most procedures are performed under local anesthesia,
+                    ensuring you remain comfortable throughout. For more
+                    extensive surgeries, general anesthesia may be used. Our
+                    anesthesiologists will discuss the best option for your
+                    specific procedure and medical history.
+                  </p>
+                </div>
+              </div>
+
+              <!-- FAQ Item 5 -->
+              <div class="bg-white rounded-lg shadow-sm border border-gray-200">
+                <button
+                  class="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 transition-colors duration-200"
+                  onclick="toggleAccordion(this)"
+                >
+                  <span class="text-gray-800 font-medium"
+                    >How soon will I see results from my treatment?</span
+                  >
+                  <svg
+                    class="w-5 h-5 text-gray-400 transform transition-transform duration-200"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+                    ></path>
+                  </svg>
+                </button>
+                <div class="accordion-content px-6 pb-4">
+                  <p class="text-gray-600 leading-relaxed">
+                    Results vary depending on the treatment type. Hair
+                    transplant results typically become visible after 3-4
+                    months, with full results appearing within 12-18 months.
+                    Cosmetic procedures may show immediate improvements, with
+                    final results visible once swelling subsides.
+                  </p>
+                </div>
+              </div>
+
+              <!-- FAQ Item 6 -->
+              <div class="bg-white rounded-lg shadow-sm border border-gray-200">
+                <button
+                  class="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 transition-colors duration-200"
+                  onclick="toggleAccordion(this)"
+                >
+                  <span class="text-gray-800 font-medium"
+                    >Will I have a natural look after the procedure?</span
+                  >
+                  <svg
+                    class="w-5 h-5 text-gray-400 transform transition-transform duration-200"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+                    ></path>
+                  </svg>
+                </button>
+                <div class="accordion-content px-6 pb-4">
+                  <p class="text-gray-600 leading-relaxed">
+                    Our surgeons are highly skilled in creating natural-looking
+                    results that enhance your features harmoniously. We use
+                    advanced techniques and take great care in design and
+                    placement to ensure results look completely natural and
+                    complement your facial structure.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="travel" class="tab-panel active grid gap-y-10">
+            <!-- FAQ Box  -->
+            <div class="space-y-2 p-2 bg-gold/20 rounded-xl max-w-3xl mx-auto">
+              <!-- FAQ Item 1 - Expanded by default -->
+              <div class="bg-white rounded-lg shadow-sm border border-gray-200">
+                <button
+                  class="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 transition-colors duration-200"
+                  onclick="toggleAccordion(this)"
+                >
+                  <span class="text-gray-800 font-medium"
+                    >How long does the recovery process take after a hair
+                    transplant or surgery?</span
+                  >
+                  <svg
+                    class="w-5 h-5 text-gray-400 transform transition-transform duration-200 rotate-180"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    ></path>
+                  </svg>
+                </button>
+                <div class="accordion-content open px-6 pb-4">
+                  <p class="text-gray-600 leading-relaxed">
+                    Recovery time depends on the procedure, but most clients
+                    return to light activities within a few days. For hair
+                    transplants, visible healing typically occurs within 7-10
+                    days, while plastic surgery recovery may take longer. You'll
+                    receive a personalized aftercare plan and 24/7 support to
+                    guide your recovery smoothly.
+                  </p>
+                  <div class="flex items-center mt-4 space-x-4">
+                    <span class="text-sm text-gray-500"
+                      >Was this content helpful</span
+                    >
+                    <button
+                      class="flex items-center space-x-1 text-sm text-gray-500 hover:text-green-600 transition-colors"
+                    >
+                      <svg
+                        class="w-4 h-4"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V8a2 2 0 00-2-2H4.222a2 2 0 00-1.897 1.367L2 9m9 1v8a2 2 0 01-2 2H4.222a2 2 0 01-1.897-1.367L2 17m9-8v2m0 0v8a2 2 0 002 2h4.017a2 2 0 001.958-1.586l2.5-8A2 2 0 0016.517 8H14V6a2 2 0 00-2-2h-1m3 0H9a2 2 0 000 4v1m3-5a2 2 0 016 0v1"
+                        ></path>
+                      </svg>
+                    </button>
+                    <button
+                      class="flex items-center space-x-1 text-sm text-gray-500 hover:text-red-600 transition-colors"
+                    >
+                      <svg
+                        class="w-4 h-4"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M10 14H5.236a2 2 0 01-1.789-2.894l3.5-7A2 2 0 018.736 3h4.018c.163 0 .326.02.485.06L17 4m-7 10v2a2 2 0 002 2h4.764a2 2 0 001.789-2.894l-3.5-7A2 2 0 0013.236 4H9m1 10v-2m0 0V4a2 2 0 012-2h4.023a2 2 0 011.958 1.586l2.5 8A2 2 0 0117.477 14H15V16a2 2 0 01-2 2h-1m-3-4H9a2 2 0 000-4v1m3 5a2 2 0 01-6 0v-1"
+                        ></path>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- FAQ Item 2 -->
+              <div class="bg-white rounded-lg shadow-sm border border-gray-200">
+                <button
+                  class="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 transition-colors duration-200"
+                  onclick="toggleAccordion(this)"
+                >
+                  <span class="text-gray-800 font-medium"
+                    >Can Estefarya assist with travel and accommodation
+                    arrangements?</span
+                  >
+                  <svg
+                    class="w-5 h-5 text-gray-400 transform transition-transform duration-200"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+                    ></path>
+                  </svg>
+                </button>
+                <div class="accordion-content px-6 pb-4">
+                  <p class="text-gray-600 leading-relaxed">
+                    Yes, Estefarya provides comprehensive travel assistance
+                    including hotel bookings, airport transfers, and local
+                    transportation arrangements. Our dedicated travel team
+                    ensures your journey is comfortable and stress-free from
+                    arrival to departure.
+                  </p>
+                </div>
+              </div>
+
+              <!-- FAQ Item 3 -->
+              <div class="bg-white rounded-lg shadow-sm border border-gray-200">
+                <button
+                  class="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 transition-colors duration-200"
+                  onclick="toggleAccordion(this)"
+                >
+                  <span class="text-gray-800 font-medium"
+                    >Are consultations available online before I travel?</span
+                  >
+                  <svg
+                    class="w-5 h-5 text-gray-400 transform transition-transform duration-200"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+                    ></path>
+                  </svg>
+                </button>
+                <div class="accordion-content px-6 pb-4">
+                  <p class="text-gray-600 leading-relaxed">
+                    Absolutely! We offer virtual consultations with our expert
+                    medical team before your trip. This allows us to assess your
+                    needs, discuss treatment options, and create a personalized
+                    treatment plan, ensuring you're fully prepared for your
+                    visit.
+                  </p>
+                </div>
+              </div>
+
+              <!-- FAQ Item 4 -->
+              <div class="bg-white rounded-lg shadow-sm border border-gray-200">
+                <button
+                  class="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 transition-colors duration-200"
+                  onclick="toggleAccordion(this)"
+                >
+                  <span class="text-gray-800 font-medium"
+                    >Is the procedure painful, and will I be under
+                    anesthesia?</span
+                  >
+                  <svg
+                    class="w-5 h-5 text-gray-400 transform transition-transform duration-200"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+                    ></path>
+                  </svg>
+                </button>
+                <div class="accordion-content px-6 pb-4">
+                  <p class="text-gray-600 leading-relaxed">
+                    Most procedures are performed under local anesthesia,
+                    ensuring you remain comfortable throughout. For more
+                    extensive surgeries, general anesthesia may be used. Our
+                    anesthesiologists will discuss the best option for your
+                    specific procedure and medical history.
+                  </p>
+                </div>
+              </div>
+
+              <!-- FAQ Item 5 -->
+              <div class="bg-white rounded-lg shadow-sm border border-gray-200">
+                <button
+                  class="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 transition-colors duration-200"
+                  onclick="toggleAccordion(this)"
+                >
+                  <span class="text-gray-800 font-medium"
+                    >How soon will I see results from my treatment?</span
+                  >
+                  <svg
+                    class="w-5 h-5 text-gray-400 transform transition-transform duration-200"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+                    ></path>
+                  </svg>
+                </button>
+                <div class="accordion-content px-6 pb-4">
+                  <p class="text-gray-600 leading-relaxed">
+                    Results vary depending on the treatment type. Hair
+                    transplant results typically become visible after 3-4
+                    months, with full results appearing within 12-18 months.
+                    Cosmetic procedures may show immediate improvements, with
+                    final results visible once swelling subsides.
+                  </p>
+                </div>
+              </div>
+
+              <!-- FAQ Item 6 -->
+              <div class="bg-white rounded-lg shadow-sm border border-gray-200">
+                <button
+                  class="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 transition-colors duration-200"
+                  onclick="toggleAccordion(this)"
+                >
+                  <span class="text-gray-800 font-medium"
+                    >Will I have a natural look after the procedure?</span
+                  >
+                  <svg
+                    class="w-5 h-5 text-gray-400 transform transition-transform duration-200"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+                    ></path>
+                  </svg>
+                </button>
+                <div class="accordion-content px-6 pb-4">
+                  <p class="text-gray-600 leading-relaxed">
+                    Our surgeons are highly skilled in creating natural-looking
+                    results that enhance your features harmoniously. We use
+                    advanced techniques and take great care in design and
+                    placement to ensure results look completely natural and
+                    complement your facial structure.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="space-y-2 p-2 bg-gold/20 rounded-xl max-w-3xl mx-auto">
+              <!-- FAQ Item 1 - Expanded by default -->
+              <div class="bg-white rounded-lg shadow-sm border border-gray-200">
+                <button
+                  class="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 transition-colors duration-200"
+                  onclick="toggleAccordion(this)"
+                >
+                  <span class="text-gray-800 font-medium"
+                    >How long does the recovery process take after a hair
+                    transplant or surgery?</span
+                  >
+                  <svg
+                    class="w-5 h-5 text-gray-400 transform transition-transform duration-200 rotate-180"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    ></path>
+                  </svg>
+                </button>
+                <div class="accordion-content open px-6 pb-4">
+                  <p class="text-gray-600 leading-relaxed">
+                    Recovery time depends on the procedure, but most clients
+                    return to light activities within a few days. For hair
+                    transplants, visible healing typically occurs within 7-10
+                    days, while plastic surgery recovery may take longer. You'll
+                    receive a personalized aftercare plan and 24/7 support to
+                    guide your recovery smoothly.
+                  </p>
+                  <div class="flex items-center mt-4 space-x-4">
+                    <span class="text-sm text-gray-500"
+                      >Was this content helpful</span
+                    >
+                    <button
+                      class="flex items-center space-x-1 text-sm text-gray-500 hover:text-green-600 transition-colors"
+                    >
+                      <svg
+                        class="w-4 h-4"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V8a2 2 0 00-2-2H4.222a2 2 0 00-1.897 1.367L2 9m9 1v8a2 2 0 01-2 2H4.222a2 2 0 01-1.897-1.367L2 17m9-8v2m0 0v8a2 2 0 002 2h4.017a2 2 0 001.958-1.586l2.5-8A2 2 0 0016.517 8H14V6a2 2 0 00-2-2h-1m3 0H9a2 2 0 000 4v1m3-5a2 2 0 016 0v1"
+                        ></path>
+                      </svg>
+                    </button>
+                    <button
+                      class="flex items-center space-x-1 text-sm text-gray-500 hover:text-red-600 transition-colors"
+                    >
+                      <svg
+                        class="w-4 h-4"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M10 14H5.236a2 2 0 01-1.789-2.894l3.5-7A2 2 0 018.736 3h4.018c.163 0 .326.02.485.06L17 4m-7 10v2a2 2 0 002 2h4.764a2 2 0 001.789-2.894l-3.5-7A2 2 0 0013.236 4H9m1 10v-2m0 0V4a2 2 0 012-2h4.023a2 2 0 011.958 1.586l2.5 8A2 2 0 0117.477 14H15V16a2 2 0 01-2 2h-1m-3-4H9a2 2 0 000-4v1m3 5a2 2 0 01-6 0v-1"
+                        ></path>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- FAQ Item 2 -->
+              <div class="bg-white rounded-lg shadow-sm border border-gray-200">
+                <button
+                  class="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 transition-colors duration-200"
+                  onclick="toggleAccordion(this)"
+                >
+                  <span class="text-gray-800 font-medium"
+                    >Can Estefarya assist with travel and accommodation
+                    arrangements?</span
+                  >
+                  <svg
+                    class="w-5 h-5 text-gray-400 transform transition-transform duration-200"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+                    ></path>
+                  </svg>
+                </button>
+                <div class="accordion-content px-6 pb-4">
+                  <p class="text-gray-600 leading-relaxed">
+                    Yes, Estefarya provides comprehensive travel assistance
+                    including hotel bookings, airport transfers, and local
+                    transportation arrangements. Our dedicated travel team
+                    ensures your journey is comfortable and stress-free from
+                    arrival to departure.
+                  </p>
+                </div>
+              </div>
+
+              <!-- FAQ Item 3 -->
+              <div class="bg-white rounded-lg shadow-sm border border-gray-200">
+                <button
+                  class="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 transition-colors duration-200"
+                  onclick="toggleAccordion(this)"
+                >
+                  <span class="text-gray-800 font-medium"
+                    >Are consultations available online before I travel?</span
+                  >
+                  <svg
+                    class="w-5 h-5 text-gray-400 transform transition-transform duration-200"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+                    ></path>
+                  </svg>
+                </button>
+                <div class="accordion-content px-6 pb-4">
+                  <p class="text-gray-600 leading-relaxed">
+                    Absolutely! We offer virtual consultations with our expert
+                    medical team before your trip. This allows us to assess your
+                    needs, discuss treatment options, and create a personalized
+                    treatment plan, ensuring you're fully prepared for your
+                    visit.
+                  </p>
+                </div>
+              </div>
+
+              <!-- FAQ Item 4 -->
+              <div class="bg-white rounded-lg shadow-sm border border-gray-200">
+                <button
+                  class="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 transition-colors duration-200"
+                  onclick="toggleAccordion(this)"
+                >
+                  <span class="text-gray-800 font-medium"
+                    >Is the procedure painful, and will I be under
+                    anesthesia?</span
+                  >
+                  <svg
+                    class="w-5 h-5 text-gray-400 transform transition-transform duration-200"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+                    ></path>
+                  </svg>
+                </button>
+                <div class="accordion-content px-6 pb-4">
+                  <p class="text-gray-600 leading-relaxed">
+                    Most procedures are performed under local anesthesia,
+                    ensuring you remain comfortable throughout. For more
+                    extensive surgeries, general anesthesia may be used. Our
+                    anesthesiologists will discuss the best option for your
+                    specific procedure and medical history.
+                  </p>
+                </div>
+              </div>
+
+              <!-- FAQ Item 5 -->
+              <div class="bg-white rounded-lg shadow-sm border border-gray-200">
+                <button
+                  class="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 transition-colors duration-200"
+                  onclick="toggleAccordion(this)"
+                >
+                  <span class="text-gray-800 font-medium"
+                    >How soon will I see results from my treatment?</span
+                  >
+                  <svg
+                    class="w-5 h-5 text-gray-400 transform transition-transform duration-200"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+                    ></path>
+                  </svg>
+                </button>
+                <div class="accordion-content px-6 pb-4">
+                  <p class="text-gray-600 leading-relaxed">
+                    Results vary depending on the treatment type. Hair
+                    transplant results typically become visible after 3-4
+                    months, with full results appearing within 12-18 months.
+                    Cosmetic procedures may show immediate improvements, with
+                    final results visible once swelling subsides.
+                  </p>
+                </div>
+              </div>
+
+              <!-- FAQ Item 6 -->
+              <div class="bg-white rounded-lg shadow-sm border border-gray-200">
+                <button
+                  class="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 transition-colors duration-200"
+                  onclick="toggleAccordion(this)"
+                >
+                  <span class="text-gray-800 font-medium"
+                    >Will I have a natural look after the procedure?</span
+                  >
+                  <svg
+                    class="w-5 h-5 text-gray-400 transform transition-transform duration-200"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+                    ></path>
+                  </svg>
+                </button>
+                <div class="accordion-content px-6 pb-4">
+                  <p class="text-gray-600 leading-relaxed">
+                    Our surgeons are highly skilled in creating natural-looking
+                    results that enhance your features harmoniously. We use
+                    advanced techniques and take great care in design and
+                    placement to ensure results look completely natural and
+                    complement your facial structure.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="space-y-2 p-2 bg-gold/20 rounded-xl max-w-3xl mx-auto">
+              <!-- FAQ Item 1 - Expanded by default -->
+              <div class="bg-white rounded-lg shadow-sm border border-gray-200">
+                <button
+                  class="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 transition-colors duration-200"
+                  onclick="toggleAccordion(this)"
+                >
+                  <span class="text-gray-800 font-medium"
+                    >How long does the recovery process take after a hair
+                    transplant or surgery?</span
+                  >
+                  <svg
+                    class="w-5 h-5 text-gray-400 transform transition-transform duration-200 rotate-180"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    ></path>
+                  </svg>
+                </button>
+                <div class="accordion-content open px-6 pb-4">
+                  <p class="text-gray-600 leading-relaxed">
+                    Recovery time depends on the procedure, but most clients
+                    return to light activities within a few days. For hair
+                    transplants, visible healing typically occurs within 7-10
+                    days, while plastic surgery recovery may take longer. You'll
+                    receive a personalized aftercare plan and 24/7 support to
+                    guide your recovery smoothly.
+                  </p>
+                  <div class="flex items-center mt-4 space-x-4">
+                    <span class="text-sm text-gray-500"
+                      >Was this content helpful</span
+                    >
+                    <button
+                      class="flex items-center space-x-1 text-sm text-gray-500 hover:text-green-600 transition-colors"
+                    >
+                      <svg
+                        class="w-4 h-4"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V8a2 2 0 00-2-2H4.222a2 2 0 00-1.897 1.367L2 9m9 1v8a2 2 0 01-2 2H4.222a2 2 0 01-1.897-1.367L2 17m9-8v2m0 0v8a2 2 0 002 2h4.017a2 2 0 001.958-1.586l2.5-8A2 2 0 0016.517 8H14V6a2 2 0 00-2-2h-1m3 0H9a2 2 0 000 4v1m3-5a2 2 0 016 0v1"
+                        ></path>
+                      </svg>
+                    </button>
+                    <button
+                      class="flex items-center space-x-1 text-sm text-gray-500 hover:text-red-600 transition-colors"
+                    >
+                      <svg
+                        class="w-4 h-4"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M10 14H5.236a2 2 0 01-1.789-2.894l3.5-7A2 2 0 018.736 3h4.018c.163 0 .326.02.485.06L17 4m-7 10v2a2 2 0 002 2h4.764a2 2 0 001.789-2.894l-3.5-7A2 2 0 0013.236 4H9m1 10v-2m0 0V4a2 2 0 012-2h4.023a2 2 0 011.958 1.586l2.5 8A2 2 0 0117.477 14H15V16a2 2 0 01-2 2h-1m-3-4H9a2 2 0 000-4v1m3 5a2 2 0 01-6 0v-1"
+                        ></path>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- FAQ Item 2 -->
+              <div class="bg-white rounded-lg shadow-sm border border-gray-200">
+                <button
+                  class="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 transition-colors duration-200"
+                  onclick="toggleAccordion(this)"
+                >
+                  <span class="text-gray-800 font-medium"
+                    >Can Estefarya assist with travel and accommodation
+                    arrangements?</span
+                  >
+                  <svg
+                    class="w-5 h-5 text-gray-400 transform transition-transform duration-200"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+                    ></path>
+                  </svg>
+                </button>
+                <div class="accordion-content px-6 pb-4">
+                  <p class="text-gray-600 leading-relaxed">
+                    Yes, Estefarya provides comprehensive travel assistance
+                    including hotel bookings, airport transfers, and local
+                    transportation arrangements. Our dedicated travel team
+                    ensures your journey is comfortable and stress-free from
+                    arrival to departure.
+                  </p>
+                </div>
+              </div>
+
+              <!-- FAQ Item 3 -->
+              <div class="bg-white rounded-lg shadow-sm border border-gray-200">
+                <button
+                  class="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 transition-colors duration-200"
+                  onclick="toggleAccordion(this)"
+                >
+                  <span class="text-gray-800 font-medium"
+                    >Are consultations available online before I travel?</span
+                  >
+                  <svg
+                    class="w-5 h-5 text-gray-400 transform transition-transform duration-200"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+                    ></path>
+                  </svg>
+                </button>
+                <div class="accordion-content px-6 pb-4">
+                  <p class="text-gray-600 leading-relaxed">
+                    Absolutely! We offer virtual consultations with our expert
+                    medical team before your trip. This allows us to assess your
+                    needs, discuss treatment options, and create a personalized
+                    treatment plan, ensuring you're fully prepared for your
+                    visit.
+                  </p>
+                </div>
+              </div>
+
+              <!-- FAQ Item 4 -->
+              <div class="bg-white rounded-lg shadow-sm border border-gray-200">
+                <button
+                  class="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 transition-colors duration-200"
+                  onclick="toggleAccordion(this)"
+                >
+                  <span class="text-gray-800 font-medium"
+                    >Is the procedure painful, and will I be under
+                    anesthesia?</span
+                  >
+                  <svg
+                    class="w-5 h-5 text-gray-400 transform transition-transform duration-200"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+                    ></path>
+                  </svg>
+                </button>
+                <div class="accordion-content px-6 pb-4">
+                  <p class="text-gray-600 leading-relaxed">
+                    Most procedures are performed under local anesthesia,
+                    ensuring you remain comfortable throughout. For more
+                    extensive surgeries, general anesthesia may be used. Our
+                    anesthesiologists will discuss the best option for your
+                    specific procedure and medical history.
+                  </p>
+                </div>
+              </div>
+
+              <!-- FAQ Item 5 -->
+              <div class="bg-white rounded-lg shadow-sm border border-gray-200">
+                <button
+                  class="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 transition-colors duration-200"
+                  onclick="toggleAccordion(this)"
+                >
+                  <span class="text-gray-800 font-medium"
+                    >How soon will I see results from my treatment?</span
+                  >
+                  <svg
+                    class="w-5 h-5 text-gray-400 transform transition-transform duration-200"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+                    ></path>
+                  </svg>
+                </button>
+                <div class="accordion-content px-6 pb-4">
+                  <p class="text-gray-600 leading-relaxed">
+                    Results vary depending on the treatment type. Hair
+                    transplant results typically become visible after 3-4
+                    months, with full results appearing within 12-18 months.
+                    Cosmetic procedures may show immediate improvements, with
+                    final results visible once swelling subsides.
+                  </p>
+                </div>
+              </div>
+
+              <!-- FAQ Item 6 -->
+              <div class="bg-white rounded-lg shadow-sm border border-gray-200">
+                <button
+                  class="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 transition-colors duration-200"
+                  onclick="toggleAccordion(this)"
+                >
+                  <span class="text-gray-800 font-medium"
+                    >Will I have a natural look after the procedure?</span
+                  >
+                  <svg
+                    class="w-5 h-5 text-gray-400 transform transition-transform duration-200"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+                    ></path>
+                  </svg>
+                </button>
+                <div class="accordion-content px-6 pb-4">
+                  <p class="text-gray-600 leading-relaxed">
+                    Our surgeons are highly skilled in creating natural-looking
+                    results that enhance your features harmoniously. We use
+                    advanced techniques and take great care in design and
+                    placement to ensure results look completely natural and
+                    complement your facial structure.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer Component -->
+    <footer class="bg-navy text-white">
+      <div class="max-w-screen-2xl mx-auto px-6 py-12">
+        <div
+          class="flex w-full flex-col lg:flex-row lg:justify-between lg:items-start gap-8"
+        >
+          <!-- Company Info Section -->
+          <div class="w-full">
+            <div class="mb-6">
+              <h2 class="text-2xl font-bold text-white mb-4">estefаrya</h2>
+              <p class="text-gray-300 leading-relaxed max-w-md">
+                Estefarya was founded to offer world-class aesthetic care with a
+                human touch, combining medical excellence with a commitment to
+                confidence.
+              </p>
+            </div>
+
+            <div class="mb-8">
+              <a
+                href="/about-us"
+                class="w-fit text-white border border-gray-400 rounded-full px-4 py-2 text-sm hover:bg-white hover:text-navy transition-colors flex items-center gap-2"
+              >
+                More about us
+                <span class="w-2 h-2 bg-green-400 rounded-full"></span>
+              </a>
+            </div>
+
+            <!-- Social Media Icons -->
+            <div class="grid grid-cols-2 w-28 gap-4">
+              <a
+                href="#"
+                class="w-10 h-10 bg-white rounded-full flex items-center justify-center text-navy hover:bg-gray-200 transition-colors"
+              >
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="#"
+                class="w-10 h-10 bg-white rounded-full flex items-center justify-center text-navy hover:bg-gray-200 transition-colors"
+              >
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="#"
+                class="w-10 h-10 bg-white rounded-full flex items-center justify-center text-navy hover:bg-gray-200 transition-colors"
+              >
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="#"
+                class="w-10 h-10 bg-white rounded-full flex items-center justify-center text-navy hover:bg-gray-200 transition-colors"
+              >
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M20.317 4.369a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37.07.07 0 0 0 3.616 4.4c-3.068 4.58-3.904 9.054-3.488 13.47a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994.021-.041.001-.09-.041-.106a13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.197.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Navigation Links -->
+          <div class="grid grid-cols-2 gap-8 w-full">
+            <!-- Column 1 -->
+            <div class="">
+              <ul class="space-y-3">
+                <li>
+                  <a
+                    href="#"
+                    class="text-gray-300 hover:text-white transition-colors"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-gray-300 hover:text-white transition-colors"
+                    >Reviews</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-gray-300 hover:text-white transition-colors"
+                    >About us</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-gray-300 hover:text-white transition-colors"
+                    >Blog</a
+                  >
+                </li>
+              </ul>
+              <div>
+                <div class="mb-6">
+                  <h4 class="text-white font-medium mb-3">We accept</h4>
+                  <div class="flex gap-2">
+                    <div
+                      class="w-8 h-5 bg-white rounded flex items-center justify-center"
+                    >
+                      <span class="text-xs font-bold text-blue-600">VISA</span>
+                    </div>
+                    <div
+                      class="w-8 h-5 bg-gradient-to-r from-red-500 to-yellow-500 rounded"
+                    ></div>
+                    <div
+                      class="w-8 h-5 bg-white rounded flex items-center justify-center"
+                    >
+                      <span class="text-xs font-bold text-blue-600">G</span>
+                    </div>
+                    <div class="w-8 h-5 bg-orange-500 rounded"></div>
+                  </div>
+                </div>
+
+                <div class="mb-6">
+                  <h4 class="text-white font-medium mb-3">Contact Us</h4>
+                  <p class="text-gray-300 text-sm mb-1">+1 (999) 888-77-66</p>
+                  <p class="text-gray-300 text-sm">hello@logopsum.com</p>
+                </div>
+
+                <div class="mb-6">
+                  <div class="flex items-end justify-between">
+                    <div>
+                      <h4 class="text-white font-medium mb-3">Location</h4>
+                      <p class="text-gray-300 text-sm">483920, Moscow,</p>
+                      <p class="text-gray-300 text-sm">
+                        Myasnitskaya 22/2/5, Office 4
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Column 2 -->
+            <div class="flex flex-col gap-10 justify-between">
+              <ul class="space-y-3">
+                <li>
+                  <a
+                    href="#"
+                    class="text-gray-300 hover:text-white transition-colors"
+                    >FAQs</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-gray-300 hover:text-white transition-colors"
+                    >Travel info</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-gray-300 hover:text-white transition-colors"
+                    >Contact</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-gray-300 hover:text-white transition-colors"
+                    >Treatments</a
+                  >
+                </li>
+              </ul>
+              <div class="mb-6">
+                <h4 class="text-white font-medium mb-3">Languages</h4>
+                <div class="flex flex-wrap gap-2">
+                  <span class="text-white font-medium">En</span>
+                  <span class="text-gray-400">Es</span>
+                  <span class="text-gray-400">Fr</span>
+                  <span class="text-gray-400">De</span>
+                  <span class="text-gray-400">Ru</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="border-t border-gray-600 mt-12 pt-6">
+          <div
+            class="flex flex-col md:flex-row justify-between items-center text-sm text-gray-400"
+          >
+            <p>Estefarya © 2025 — Copyright</p>
+            <p>All Rights reserved</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      class TabComponent {
+        constructor() {
+          this.tabButtons = document.querySelectorAll(".tab-button");
+          this.tabPanels = document.querySelectorAll(".tab-panel");
+          this.tabIndicator = document.getElementById("tabIndicator");
+          this.activeTab = 0;
+
+          this.init();
+        }
+
+        init() {
+          this.updateIndicator();
+          this.bindEvents();
+          this.updateActiveStates();
+        }
+
+        bindEvents() {
+          this.tabButtons.forEach((button, index) => {
+            button.addEventListener("click", () => {
+              this.switchTab(index);
+            });
+          });
+
+          // Keyboard navigation
+          document.addEventListener("keydown", (e) => {
+            if (e.key === "ArrowLeft" && this.activeTab > 0) {
+              this.switchTab(this.activeTab - 1);
+            } else if (
+              e.key === "ArrowRight" &&
+              this.activeTab < this.tabButtons.length - 1
+            ) {
+              this.switchTab(this.activeTab + 1);
+            }
+          });
+
+          // Handle window resize for indicator positioning
+          window.addEventListener("resize", () => {
+            this.updateIndicator();
+          });
+        }
+
+        switchTab(index) {
+          if (index === this.activeTab) return;
+
+          // Remove active class from current tab and panel
+          this.tabButtons[this.activeTab].classList.remove("active");
+          this.tabPanels[this.activeTab].classList.remove("active");
+
+          // Add active class to new tab and panel
+          this.activeTab = index;
+          this.tabButtons[this.activeTab].classList.add("active");
+          this.tabPanels[this.activeTab].classList.add("active");
+
+          // Update indicator position and button states
+          this.updateIndicator();
+          this.updateActiveStates();
+
+          // Add a subtle animation effect
+          this.tabButtons[this.activeTab].style.transform = "scale(0.95)";
+          setTimeout(() => {
+            this.tabButtons[this.activeTab].style.transform = "scale(1)";
+          }, 150);
+        }
+
+        updateActiveStates() {
+          this.tabButtons.forEach((button, index) => {
+            if (index === this.activeTab) {
+              button.classList.add("text-white");
+              button.classList.remove("text-gray-600");
+            } else {
+              button.classList.remove("text-white");
+              button.classList.add("text-gray-600");
+            }
+          });
+        }
+
+        updateIndicator() {
+          const activeButton = this.tabButtons[this.activeTab];
+          const buttonRect = activeButton.getBoundingClientRect();
+          const containerRect =
+            activeButton.parentElement.getBoundingClientRect();
+
+          const left = buttonRect.left - containerRect.left;
+          const width = buttonRect.width;
+
+          this.tabIndicator.style.left = `${left}px`;
+          this.tabIndicator.style.width = `${width}px`;
+        }
+      }
+
+      // Initialize the tab component when the page loads
+      document.addEventListener("DOMContentLoaded", () => {
+        new TabComponent();
+      });
+    </script>
+    <script src="/app.js"></script>
+  </body>
+</html>
