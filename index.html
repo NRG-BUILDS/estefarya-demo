@@ -463,13 +463,46 @@
           <div class="text-white space-y-4">
             <!-- Trust Indicator -->
             <div
-              class="text-sm flex items-center space-x-3 w-fit p-2 bg-white/20 border border-white/40 rounded-full backdrop-blur-md"
+              class="text-sm flex items-center space-x-3 w-fit p-1 bg-white/20 border border-white/20 rounded-full backdrop-blur"
             >
-              <div class="flex">
-                <div class="bg-white rounded-full size-6 border"></div>
-                <div class="bg-white rounded-full size-6 border -ml-2"></div>
-                <div class="bg-white rounded-full size-6 border -ml-2"></div>
-                <div class="bg-white rounded-full size-6 border -ml-2"></div>
+              <div class="flex *:overflow-clip">
+                <div
+                  class="bg-white rounded-full size-6 border-[0.5px] flex items-center justify-center"
+                >
+                  <img
+                    src="/src/images/homepage/flags/du.png"
+                    alt=""
+                    class="size-full object-cover"
+                  />
+                </div>
+
+                <div
+                  class="bg-white rounded-full size-6 border-[0.5px] flex items-center justify-center -ml-2"
+                >
+                  <img
+                    src="/src/images/homepage/flags/ger.png"
+                    alt=""
+                    class="size-full object-cover"
+                  />
+                </div>
+                <div
+                  class="bg-white rounded-full size-6 border-[0.5px] flex items-center justify-center -ml-2"
+                >
+                  <img
+                    src="/src/images/homepage/flags/eng.png"
+                    alt=""
+                    class="size-full object-cover"
+                  />
+                </div>
+                <div
+                  class="bg-white rounded-full size-6 border-[0.5px] flex items-center justify-center -ml-2"
+                >
+                  <img
+                    src="/src/images/homepage/flags/usa.png"
+                    alt=""
+                    class="size-full object-cover"
+                  />
+                </div>
               </div>
               <span class="text-sm text-medium"
                 >Clients from over 40+ countries</span
@@ -1463,6 +1496,14 @@
                 </p>
               </div>
             </div>
+          </div>
+          <!-- CTA Section -->
+          <div class="text-center mt-16 space-y-4 max-w-xl mx-auto">
+            <button
+              class="bg-gray-800 hover:bg-gray-900 text-white font-semibold px-5 py-4 rounded-xl transition-all duration-300 transform hover:scale-105 flex items-center space-x-3 shadow-xl mx-auto text-lg"
+            >
+              <span>View more questions</span>
+            </button>
           </div>
         </div>
       </section>
