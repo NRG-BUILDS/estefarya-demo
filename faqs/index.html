@@ -477,28 +477,28 @@
           <!-- I created "educational", "news", "client", and "treatment" tabs -->
           <!-- If you want to create a new tab, create a new button and set the data-tab value to the name of the tab. Next, create a container div and give the same name to the div -->
           <div
-            class="max-w-2xl font-bold mx-auto relative bg-gold/20 rounded-xl p-1.5 mb-8"
+            class="w-fit max-w-2xl font-bold mx-auto relative bg-dark/10 rounded-xl p-1.5 mb-8"
             id="tabsList"
           >
             <div
-              class="tab-indicator absolute top-1.5 bottom-1.5 bg-white rounded-lg shadow-lg"
+              class="tab-indicator absolute top-1.5 bottom-1.5 bg-white rounded-lg"
               id="tabIndicator"
             ></div>
-            <div class="flex relative z-10">
+            <div class="flex justify-center gap-4 relative z-10">
               <button
-                class="tab-button flex-1 px-3 py-3 text-sm font-medium !text-gray-600 hover:text-gray-800 rounded-lg transition-all duration-300 hover:-translate-y-0.5 active"
+                class="tab-button p-3 text-sm !text-dark font-semibold hover:text-gray-800 rounded-lg transition-all duration-300 active"
                 data-tab="general"
               >
                 General FAQs
               </button>
               <button
-                class="tab-button flex-1 px-3 py-3 text-sm font-medium !text-gray-600 hover:text-gray-800 rounded-lg transition-all duration-300 hover:-translate-y-0.5 active"
+                class="tab-button p-3 text-sm !text-dark font-semibold hover:text-gray-800 rounded-lg transition-all duration-300"
                 data-tab="procedure"
               >
                 Procedure specific FAQs
               </button>
               <button
-                class="tab-button flex-1 px-3 py-3 text-sm font-medium !text-gray-600 hover:text-gray-800 rounded-lg transition-all duration-300 hover:-translate-y-0.5 active"
+                class="tab-button p-3 text-sm !text-dark font-semibold hover:text-gray-800 rounded-lg transition-all duration-300"
                 data-tab="travel"
               >
                 Travel FAQs
@@ -3063,7 +3063,6 @@
 
           // Update indicator position and button states
           this.updateIndicator();
-          this.updateActiveStates();
 
           // Add a subtle animation effect
           this.tabButtons[this.activeTab].style.transform = "scale(0.95)";
@@ -3072,25 +3071,13 @@
           }, 150);
         }
 
-        updateActiveStates() {
-          this.tabButtons.forEach((button, index) => {
-            if (index === this.activeTab) {
-              button.classList.add("text-white");
-              button.classList.remove("text-gray-600");
-            } else {
-              button.classList.remove("text-white");
-              button.classList.add("text-gray-600");
-            }
-          });
-        }
-
         updateIndicator() {
           const activeButton = this.tabButtons[this.activeTab];
           const buttonRect = activeButton.getBoundingClientRect();
           const containerRect =
             activeButton.parentElement.getBoundingClientRect();
 
-          const left = buttonRect.left - containerRect.left;
+          const left = buttonRect.left - containerRect.left + 4; //to account for padding;
           const width = buttonRect.width;
 
           this.tabIndicator.style.left = `${left}px`;

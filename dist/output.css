@@ -729,6 +729,10 @@ video {
   margin-bottom: 1.25rem;
 }
 
+.-ml-2{
+  margin-left: -0.5rem;
+}
+
 .mb-1{
   margin-bottom: 0.25rem;
 }
@@ -791,10 +795,6 @@ video {
 
 .mt-6{
   margin-top: 1.5rem;
-}
-
-.-ml-2{
-  margin-left: -0.5rem;
 }
 
 .block{
@@ -953,6 +953,10 @@ video {
   max-height: 522px;
 }
 
+.min-h-\[100dvh\]{
+  min-height: 100dvh;
+}
+
 .min-h-\[300px\]{
   min-height: 300px;
 }
@@ -971,14 +975,6 @@ video {
 
 .min-h-\[600px\]{
   min-height: 600px;
-}
-
-.min-h-screen{
-  min-height: 100vh;
-}
-
-.min-h-\[100dvh\]{
-  min-height: 100dvh;
 }
 
 .w-10{
@@ -1816,6 +1812,11 @@ video {
   letter-spacing: -0.05em;
 }
 
+.\!text-dark{
+  --tw-text-opacity: 1 !important;
+  color: rgb(42 41 39 / var(--tw-text-opacity, 1)) !important;
+}
+
 .\!text-gray-600{
   --tw-text-opacity: 1 !important;
   color: rgb(75 85 99 / var(--tw-text-opacity, 1)) !important;
@@ -2100,9 +2101,10 @@ body{
 
 .tab-panel:not(.active) {
   opacity: 0;
-  transform: translateY(20px);
+  transform: translateY(-25px);
+  transition: opacity 0s ease;
   position: absolute;
-  top: 0;
+  bottom: 0;
   left: 0;
   right: 0;
 }
@@ -2110,6 +2112,7 @@ body{
 .tab-panel.active {
   opacity: 1;
   transform: translateY(0);
+  transition: opacity 0.3s ease 1s;
   position: relative;
 }
 
@@ -2144,6 +2147,17 @@ body{
   -o-object-fit: cover;
      object-fit: cover;
   margin-bottom: 24px;
+}
+
+.swiper-pagination-bullet {
+  width: 20px !important;
+  height: 20px !important;
+  background-color: rgb(42 41 39 / 0.1) !important;
+  opacity: 1 !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: rgb(255, 255, 255) !important;
 }
 
 .\*\:relative > *{
