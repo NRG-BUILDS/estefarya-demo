@@ -610,6 +610,7 @@
             grab-cursor="true"
             loop="true"
             slides-per-view="auto"
+            init="false"
           >
             <swiper-slide>
               <div class="grid lg:grid-cols-2 gap-6 min-h-[456px]">
@@ -693,14 +694,56 @@
               </button>
             </div>
             <!-- Slider pagination -->
-            <div
-              class="flex items-center gap-2 *:rounded-full *:size-5 *:bg-dark/10"
-            >
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-            </div>
+             <div
+              id="custom-pagination"
+              class="flex items-center gap-2 *:border *:rounded-full"
+            ></div>
+          </div>
+          <script>
+            document.addEventListener("DOMContentLoaded", function () {
+              const swiperContainer = document.querySelector(
+                "#impressions-slider"
+              );
+              const prevBtn = document.querySelector("#prev-btn");
+              const nextBtn = document.querySelector("#next-btn");
+
+              // Configure swiper parameters
+              const params = {
+                loop: true,
+                grabCursor: true,
+                slidesPerView: 1,
+                spaceBetween: 30,
+                navigation: {
+                  nextEl: "#next-btn",
+                  prevEl: "#prev-btn",
+                },
+                pagination: {
+                  el: "#custom-pagination",
+                  clickable: true,
+                  renderBullet: function (index, className) {
+                    return (
+                      '<span class="' + className + ' custom-bullet"></span>'
+                    );
+                  },
+                },
+              };
+
+              // Apply parameters to swiper container
+              Object.assign(swiperContainer, params);
+
+              // Initialize the swiper
+              swiperContainer.initialize();
+
+              // Additional event listeners for custom buttons
+              swiperContainer.addEventListener("swiperinit", function (event) {
+                const swiper = event.detail[0];
+
+                // Connect custom navigation buttons
+                prevBtn.addEventListener("click", () => swiper.slidePrev());
+                nextBtn.addEventListener("click", () => swiper.slideNext());
+              });
+            });
+          </script>
           </div>
         </div>
       </section>
