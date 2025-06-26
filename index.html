@@ -938,83 +938,330 @@
         </div>
       </section>
       <!-- CARE EXPERIENCE SECTION -->
-      <section class="bg-cream/20">
-        <div class="container py-16 lg:py-[100px] px-4 lg:px-8 mx-auto">
-          <!-- Section Header -->
-          <div class="text-center mb-8 lg:mb-16">
-            <h2 class="text-2xl lg:text-5xl font-semibold text-gray-900 mb-4">
-              More than treatment,
-              <br />
-              <span class="text-gold">A complete care expeerience</span>
-            </h2>
+      <section
+        class="bg-cream/20 overflow-hidden rounded-2xl py-[50px] relative"
+      >
+        <!-- Carousel Container -->
+        <div class="relative">
+          <!-- Slides Container -->
+          <div id="carousel" class="carousel-container o rounded-xl">
+            <div
+              id="slides"
+              class="flex *:min-w-full transition-transform duration-500 ease-in-out"
+            >
+              <!-- Slide 1 -->
+              <div
+                class="flex w-full items-center justify-center *:w-4/5 *:max-w-[450px]"
+              >
+                <div class="bg-white slide-shadow rounded-2xl p-5">
+                  <div class="rounded-xl overflow-clip mb-5 relative">
+                    <img
+                      src="/src/images/treatments/treatment-hero.png"
+                      alt=""
+                      class="w-full aspect-[4/2.5] object-cover"
+                    />
+                    <div
+                      class="text-sm absolute right-3 top-3 text-white w-fit p-1 px-2.5 bg-white/20 border border-white/20 rounded-full backdrop-blur"
+                    >
+                      <span class="text-sm text-medium leading-none"
+                        >Precision meets passion</span
+                      >
+                    </div>
+                  </div>
+                  <div class="">
+                    <div
+                      class="feature-icon w-fit mb-5 flex items-center justify-center flex-shrink-0"
+                    >
+                      <svg
+                        width="33"
+                        height="32"
+                        viewBox="0 0 33 32"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M9.35486 4.66699H6.68819C5.95182 4.66699 5.35486 5.26395 5.35486 6.00033V10.667C5.35486 14.7171 8.6381 18.0003 12.6882 18.0003C16.7383 18.0003 20.0215 14.7171 20.0215 10.667V6.00033C20.0215 5.26395 19.4246 4.66699 18.6882 4.66699H16.0215"
+                          stroke="#AEA797"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M25.3549 20.6667V22.3333C25.3549 25.8312 22.5194 28.6667 19.0216 28.6667C15.5237 28.6667 12.6882 25.8312 12.6882 22.3333V18"
+                          stroke="#AEA797"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M16.0216 3.33301V5.99967"
+                          stroke="#AEA797"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M9.35486 3.33301V5.99967"
+                          stroke="#AEA797"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M28.0216 17.9997C28.0216 19.4725 26.8277 20.6663 25.3549 20.6663C23.8821 20.6663 22.6882 19.4725 22.6882 17.9997C22.6882 16.5269 23.8821 15.333 25.3549 15.333C26.8277 15.333 28.0216 16.5269 28.0216 17.9997Z"
+                          stroke="#AEA797"
+                          stroke-width="2"
+                        />
+                      </svg>
+                    </div>
+                    <h5 class="font-semibold mb-5 text-xl">
+                      After care support
+                    </h5>
+                    <p class="text-dark/60 max-w-[90%]">
+                      We stay with you long after your procedure. Our medical
+                      team provides detailed aftercare plans and ongoing support
+                      to ensure a smooth, comfortable recovery
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- Slide 1 -->
+              <div
+                class="flex w-full items-center justify-center *:w-4/5 *:max-w-[450px]"
+              >
+                <div class="bg-white slide-shadow rounded-2xl p-5">
+                  <div class="rounded-xl overflow-clip mb-5 relative">
+                    <img
+                      src="/src/images/treatments/treatment-hero.png"
+                      alt=""
+                      class="w-full aspect-[4/2.5] object-cover"
+                    />
+                    <div
+                      class="text-sm absolute right-3 top-3 text-white w-fit p-1 px-2.5 bg-white/20 border border-white/20 rounded-full backdrop-blur"
+                    >
+                      <span class="text-sm text-medium leading-none"
+                        >Precision meets passion</span
+                      >
+                    </div>
+                  </div>
+                  <div class="">
+                    <div
+                      class="feature-icon w-fit mb-5 flex items-center justify-center flex-shrink-0"
+                    >
+                      <svg
+                        width="33"
+                        height="32"
+                        viewBox="0 0 33 32"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M9.35486 4.66699H6.68819C5.95182 4.66699 5.35486 5.26395 5.35486 6.00033V10.667C5.35486 14.7171 8.6381 18.0003 12.6882 18.0003C16.7383 18.0003 20.0215 14.7171 20.0215 10.667V6.00033C20.0215 5.26395 19.4246 4.66699 18.6882 4.66699H16.0215"
+                          stroke="#AEA797"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M25.3549 20.6667V22.3333C25.3549 25.8312 22.5194 28.6667 19.0216 28.6667C15.5237 28.6667 12.6882 25.8312 12.6882 22.3333V18"
+                          stroke="#AEA797"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M16.0216 3.33301V5.99967"
+                          stroke="#AEA797"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M9.35486 3.33301V5.99967"
+                          stroke="#AEA797"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M28.0216 17.9997C28.0216 19.4725 26.8277 20.6663 25.3549 20.6663C23.8821 20.6663 22.6882 19.4725 22.6882 17.9997C22.6882 16.5269 23.8821 15.333 25.3549 15.333C26.8277 15.333 28.0216 16.5269 28.0216 17.9997Z"
+                          stroke="#AEA797"
+                          stroke-width="2"
+                        />
+                      </svg>
+                    </div>
+                    <h5 class="font-semibold mb-5 text-xl">
+                      After care support
+                    </h5>
+                    <p class="text-dark/60 max-w-[90%]">
+                      We stay with you long after your procedure. Our medical
+                      team provides detailed aftercare plans and ongoing support
+                      to ensure a smooth, comfortable recovery
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- Slide 1 -->
+              <div
+                class="flex w-full items-center justify-center *:w-4/5 *:max-w-[450px]"
+              >
+                <div class="bg-white slide-shadow rounded-2xl p-5">
+                  <div class="rounded-xl overflow-clip mb-5 relative">
+                    <img
+                      src="/src/images/treatments/treatment-hero.png"
+                      alt=""
+                      class="w-full aspect-[4/2.5] object-cover"
+                    />
+                    <div
+                      class="text-sm absolute right-3 top-3 text-white w-fit p-1 px-2.5 bg-white/20 border border-white/20 rounded-full backdrop-blur"
+                    >
+                      <span class="text-sm text-medium leading-none"
+                        >Precision meets passion</span
+                      >
+                    </div>
+                  </div>
+                  <div class="">
+                    <div
+                      class="feature-icon w-fit mb-5 flex items-center justify-center flex-shrink-0"
+                    >
+                      <svg
+                        width="33"
+                        height="32"
+                        viewBox="0 0 33 32"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M9.35486 4.66699H6.68819C5.95182 4.66699 5.35486 5.26395 5.35486 6.00033V10.667C5.35486 14.7171 8.6381 18.0003 12.6882 18.0003C16.7383 18.0003 20.0215 14.7171 20.0215 10.667V6.00033C20.0215 5.26395 19.4246 4.66699 18.6882 4.66699H16.0215"
+                          stroke="#AEA797"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M25.3549 20.6667V22.3333C25.3549 25.8312 22.5194 28.6667 19.0216 28.6667C15.5237 28.6667 12.6882 25.8312 12.6882 22.3333V18"
+                          stroke="#AEA797"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M16.0216 3.33301V5.99967"
+                          stroke="#AEA797"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M9.35486 3.33301V5.99967"
+                          stroke="#AEA797"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M28.0216 17.9997C28.0216 19.4725 26.8277 20.6663 25.3549 20.6663C23.8821 20.6663 22.6882 19.4725 22.6882 17.9997C22.6882 16.5269 23.8821 15.333 25.3549 15.333C26.8277 15.333 28.0216 16.5269 28.0216 17.9997Z"
+                          stroke="#AEA797"
+                          stroke-width="2"
+                        />
+                      </svg>
+                    </div>
+                    <h5 class="font-semibold mb-5 text-xl">
+                      After care support
+                    </h5>
+                    <p class="text-dark/60 max-w-[90%]">
+                      We stay with you long after your procedure. Our medical
+                      team provides detailed aftercare plans and ongoing support
+                      to ensure a smooth, comfortable recovery
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- Slide 1 -->
+              <div
+                class="flex w-full items-center justify-center *:w-4/5 *:max-w-[450px]"
+              >
+                <div class="bg-white slide-shadow rounded-2xl p-5">
+                  <div class="rounded-xl overflow-clip mb-5 relative">
+                    <img
+                      src="/src/images/treatments/treatment-hero.png"
+                      alt=""
+                      class="w-full aspect-[4/2.5] object-cover"
+                    />
+                    <div
+                      class="text-sm absolute right-3 top-3 text-white w-fit p-1 px-2.5 bg-white/20 border border-white/20 rounded-full backdrop-blur"
+                    >
+                      <span class="text-sm text-medium leading-none"
+                        >Precision meets passion</span
+                      >
+                    </div>
+                  </div>
+                  <div class="">
+                    <div
+                      class="feature-icon w-fit mb-5 flex items-center justify-center flex-shrink-0"
+                    >
+                      <svg
+                        width="33"
+                        height="32"
+                        viewBox="0 0 33 32"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M9.35486 4.66699H6.68819C5.95182 4.66699 5.35486 5.26395 5.35486 6.00033V10.667C5.35486 14.7171 8.6381 18.0003 12.6882 18.0003C16.7383 18.0003 20.0215 14.7171 20.0215 10.667V6.00033C20.0215 5.26395 19.4246 4.66699 18.6882 4.66699H16.0215"
+                          stroke="#AEA797"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M25.3549 20.6667V22.3333C25.3549 25.8312 22.5194 28.6667 19.0216 28.6667C15.5237 28.6667 12.6882 25.8312 12.6882 22.3333V18"
+                          stroke="#AEA797"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M16.0216 3.33301V5.99967"
+                          stroke="#AEA797"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M9.35486 3.33301V5.99967"
+                          stroke="#AEA797"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M28.0216 17.9997C28.0216 19.4725 26.8277 20.6663 25.3549 20.6663C23.8821 20.6663 22.6882 19.4725 22.6882 17.9997C22.6882 16.5269 23.8821 15.333 25.3549 15.333C26.8277 15.333 28.0216 16.5269 28.0216 17.9997Z"
+                          stroke="#AEA797"
+                          stroke-width="2"
+                        />
+                      </svg>
+                    </div>
+                    <h5 class="font-semibold mb-5 text-xl">
+                      After care support
+                    </h5>
+                    <p class="text-dark/60 max-w-[90%]">
+                      We stay with you long after your procedure. Our medical
+                      team provides detailed aftercare plans and ongoing support
+                      to ensure a smooth, comfortable recovery
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
 
-          <swiper-container
-            class="w-full items-center mx-auto *:p-4 *:bg-white *:rounded-lg overflow-clip lg:overflow-visible max-w-[525px] *:shadow-lg *:space-y-3"
-            effect="cards"
-            grab-cursor="true"
-            loop="true"
-            slides-per-view="1"
-          >
-            <swiper-slide>
-              <img
-                src="./src/images/homepage/founded-1.jpg"
-                alt=""
-                class="w-full aspect-video object-cover"
-              />
-              <h5 class="text-gold font-semibold">After care support</h5>
-              <p>
-                We stay with you long after your procedure. Our medical team
-                provides detailed aftercare plans and ongoing support to ensure
-                a smooth, comfortable recovery
-              </p>
-            </swiper-slide>
-            <swiper-slide>
-              <img
-                src="./src/images/homepage/founded-1.jpg"
-                alt=""
-                class="w-full aspect-video object-cover"
-              />
-              <h5 class="text-gold font-semibold">After care support</h5>
-              <p>
-                We stay with you long after your procedure. Our medical team
-                provides detailed aftercare plans and ongoing support to ensure
-                a smooth, comfortable recovery
-              </p>
-            </swiper-slide>
-            <swiper-slide>
-              <img
-                src="./src/images/homepage/founded-3.jpg"
-                alt=""
-                class="w-full aspect-video object-cover"
-              />
-              <h5 class="text-gold font-semibold">After care support</h5>
-              <p>
-                We stay with you long after your procedure. Our medical team
-                provides detailed aftercare plans and ongoing support to ensure
-                a smooth, comfortable recovery
-              </p>
-            </swiper-slide>
-            <swiper-slide>
-              <img
-                src="./src/images/homepage/founded-5.png"
-                alt=""
-                class="w-full aspect-video object-cover"
-              />
-              <h5 class="text-gold font-semibold">After care support</h5>
-              <p>
-                We stay with you long after your procedure. Our medical team
-                provides detailed aftercare plans and ongoing support to ensure
-                a smooth, comfortable recovery
-              </p>
-            </swiper-slide>
-          </swiper-container>
-
-          <!-- CTA Section -->
+          <!-- Navigation Buttons -->
           <div class="text-center mt-16 space-y-4 max-w-xl mx-auto">
             <div class="flex justify-center items-center gap-6">
               <button
-                class="prev-btn size-[52px] text-gold bg-gold/10 rounded flex items-center justify-center"
+                id="prevBtn"
+                class="size-[52px] text-gold bg-gold/10 rounded flex items-center justify-center"
               >
                 <svg
                   width="25"
@@ -1040,7 +1287,8 @@
                 </svg>
               </button>
               <button
-                class="next-btn size-[52px] rotate-180 bg-gold text-gold/10 rounded flex items-center justify-center"
+                id="nextBtn"
+                class="size-[52px] rotate-180 bg-gold text-gold/10 rounded flex items-center justify-center"
               >
                 <svg
                   width="25"
@@ -1876,7 +2124,194 @@
         swiperEl2.swiper.slidePrev();
       });
     </script>
+    <script>
+      class ModernCarousel {
+        constructor() {
+          this.currentSlide = 0;
+          this.totalSlides = 4;
+          this.autoPlayInterval = null;
+          this.isAutoPlaying = false;
+
+          this.slidesContainer = document.getElementById("slides");
+          this.prevBtn = document.getElementById("prevBtn");
+          this.nextBtn = document.getElementById("nextBtn");
+          this.playBtn = document.getElementById("playBtn");
+          this.pauseBtn = document.getElementById("pauseBtn");
+          this.indicators = document.querySelectorAll(".indicator");
+
+          this.init();
+        }
+
+        init() {
+          this.updateSlide();
+          this.bindEvents();
+          this.startAutoPlay();
+        }
+
+        bindEvents() {
+          this.prevBtn.addEventListener("click", () => this.prevSlide());
+          this.nextBtn.addEventListener("click", () => this.nextSlide());
+          this.playBtn.addEventListener("click", () => this.startAutoPlay());
+          this.pauseBtn.addEventListener("click", () => this.stopAutoPlay());
+
+          this.indicators.forEach((indicator, index) => {
+            indicator.addEventListener("click", () => this.goToSlide(index));
+          });
+
+          // Pause auto-play on hover
+          const carousel = document.getElementById("carousel");
+          carousel.addEventListener("mouseenter", () => {
+            if (this.isAutoPlaying) {
+              this.pauseAutoPlay();
+            }
+          });
+
+          carousel.addEventListener("mouseleave", () => {
+            if (this.isAutoPlaying) {
+              this.resumeAutoPlay();
+            }
+          });
+
+          // Touch/swipe support
+          let startX = 0;
+          let isDragging = false;
+
+          carousel.addEventListener("touchstart", (e) => {
+            startX = e.touches[0].clientX;
+            isDragging = true;
+          });
+
+          carousel.addEventListener("touchmove", (e) => {
+            if (!isDragging) return;
+            e.preventDefault();
+          });
+
+          carousel.addEventListener("touchend", (e) => {
+            if (!isDragging) return;
+
+            const endX = e.changedTouches[0].clientX;
+            const diffX = startX - endX;
+
+            if (Math.abs(diffX) > 50) {
+              if (diffX > 0) {
+                this.nextSlide();
+              } else {
+                this.prevSlide();
+              }
+            }
+
+            isDragging = false;
+          });
+
+          // Keyboard navigation
+          document.addEventListener("keydown", (e) => {
+            if (e.key === "ArrowLeft") {
+              this.prevSlide();
+            } else if (e.key === "ArrowRight") {
+              this.nextSlide();
+            } else if (e.key === " ") {
+              e.preventDefault();
+              if (this.isAutoPlaying) {
+                this.stopAutoPlay();
+              } else {
+                this.startAutoPlay();
+              }
+            }
+          });
+        }
+
+        updateSlide() {
+          const translateX = -this.currentSlide * 100;
+          this.slidesContainer.style.transform = `translateX(${translateX}%)`;
+
+          // Update indicators
+          this.indicators.forEach((indicator, index) => {
+            if (index === this.currentSlide) {
+              indicator.classList.add("indicator-active");
+              indicator.classList.remove("bg-white", "bg-opacity-50");
+            } else {
+              indicator.classList.remove("indicator-active");
+              indicator.classList.add("bg-white", "bg-opacity-50");
+            }
+          });
+        }
+
+        nextSlide() {
+          this.currentSlide = (this.currentSlide + 1) % this.totalSlides;
+          this.updateSlide();
+          this.addSlideAnimation();
+        }
+
+        prevSlide() {
+          this.currentSlide =
+            this.currentSlide === 0
+              ? this.totalSlides - 1
+              : this.currentSlide - 1;
+          this.updateSlide();
+          this.addSlideAnimation();
+        }
+
+        goToSlide(slideIndex) {
+          this.currentSlide = slideIndex;
+          this.updateSlide();
+          this.addSlideAnimation();
+        }
+
+        addSlideAnimation() {
+          const currentSlideElement =
+            this.slidesContainer.children[this.currentSlide];
+          currentSlideElement.classList.add("slide-enter");
+
+          setTimeout(() => {
+            currentSlideElement.classList.remove("slide-enter");
+          }, 500);
+        }
+        startAutoPlay() {
+          if (this.isAutoPlaying) return;
+
+          this.isAutoPlaying = true;
+          this.playBtn.classList.add("hidden");
+          this.pauseBtn.classList.remove("hidden");
+
+          this.autoPlayInterval = setInterval(() => {
+            this.nextSlide();
+          }, 4000);
+        }
+
+        stopAutoPlay() {
+          if (!this.isAutoPlaying) return;
+
+          this.isAutoPlaying = false;
+          this.playBtn.classList.remove("hidden");
+          this.pauseBtn.classList.add("hidden");
+
+          if (this.autoPlayInterval) {
+            clearInterval(this.autoPlayInterval);
+            this.autoPlayInterval = null;
+          }
+        }
+
+        pauseAutoPlay() {
+          if (this.autoPlayInterval) {
+            clearInterval(this.autoPlayInterval);
+            this.autoPlayInterval = null;
+          }
+        }
+
+        resumeAutoPlay() {
+          if (this.isAutoPlaying && !this.autoPlayInterval) {
+            this.autoPlayInterval = setInterval(() => {
+              this.nextSlide();
+            }, 4000);
+          }
+        }
+      }
+
+      // Initialize carousel when DOM is loaded
+      document.addEventListener("DOMContentLoaded", () => {
+        new ModernCarousel();
+      });
+    </script>
     <script src="./app.js"></script>
-    <script src="./layout.js"></script>
   </body>
 </html>
