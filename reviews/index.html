@@ -636,6 +636,7 @@
               grab-cursor="true"
               loop="true"
               slides-per-view="3"
+              init="false"
             >
               <swiper-slide>
                 <div class="">
@@ -758,13 +759,63 @@
               </div>
               <!-- Slider pagination -->
               <div
-                class="flex items-center gap-2 *:rounded-full *:size-5 *:bg-dark/10"
-              >
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-              </div>
+                id="transformation-pagination"
+                class="flex items-center gap-2 *:border *:rounded-full"
+              ></div>
+              <script>
+                document.addEventListener("DOMContentLoaded", function () {
+                  const swiperContainer = document.querySelector(
+                    "#transformation-slider"
+                  );
+                  const prevBtn = document.querySelector("#prev-btn");
+                  const nextBtn = document.querySelector("#next-btn");
+
+                  // Configure swiper parameters
+                  const params = {
+                    loop: true,
+                    grabCursor: true,
+                    slidesPerView: 1,
+                    spaceBetween: 30,
+                    navigation: {
+                      nextEl: "#next-btn",
+                      prevEl: "#prev-btn",
+                    },
+                    pagination: {
+                      el: "#transformation-pagination",
+                      clickable: true,
+                      renderBullet: function (index, className) {
+                        return (
+                          '<span class="' +
+                          className +
+                          ' custom-bullet"></span>'
+                        );
+                      },
+                    },
+                  };
+
+                  // Apply parameters to swiper container
+                  Object.assign(swiperContainer, params);
+
+                  // Initialize the swiper
+                  swiperContainer.initialize();
+
+                  // Additional event listeners for custom buttons
+                  swiperContainer.addEventListener(
+                    "swiperinit",
+                    function (event) {
+                      const swiper = event.detail[0];
+
+                      // Connect custom navigation buttons
+                      prevBtn.addEventListener("click", () =>
+                        swiper.slidePrev()
+                      );
+                      nextBtn.addEventListener("click", () =>
+                        swiper.slideNext()
+                      );
+                    }
+                  );
+                });
+              </script>
             </div>
           </div>
           <!-- Transformation Items in List = Mobile view-->
@@ -840,7 +891,6 @@
       </section>
 
       <!-- Instagram posts -->
-      <!-- GALLERY section -->
       <section class="">
         <div class="container py-16 lg:py-[100px] px-4 lg:px-8 mx-auto">
           <!-- Header -->
